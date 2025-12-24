@@ -1,55 +1,133 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>002 — AI Agents: From Interaction to Execution</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>002 — AI Agents: From Interaction to Execution</title>
 
-<style>
-:root{color-scheme:dark;}
-body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#0b0f19;color:#e8ecf3;line-height:1.6;}
-.wrap{max-width:860px;margin:0 auto;padding:56px 20px;}
-.nav{display:flex;gap:14px;margin-bottom:32px;}
-.nav a{color:#9fd0ff;text-decoration:none;font-size:14px;}
-h1,h2{color:#fff;}
-.footer{margin-top:48px;font-size:13px;color:rgba(232,236,243,.6);border-top:1px solid rgba(255,255,255,.1);padding-top:16px;}
-</style>
+  <style>
+    :root { color-scheme: dark; }
+
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: #0b0f19;
+      color: #e8ecf3;
+      line-height: 1.6;
+    }
+
+    .wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 56px 20px;
+    }
+
+    /* NAV */
+    .nav{
+      display:flex;
+      justify-content:center;
+      margin-bottom:40px;
+    }
+
+    .nav-inner{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:10px;
+      border-radius:999px;
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.14);
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+    }
+
+    .nav-inner a{
+      color:#9fd0ff;
+      text-decoration:none;
+      font-size:14px;
+      padding:8px 14px;
+      border-radius:999px;
+      line-height:1;
+    }
+
+    .nav-inner a:hover{
+      background: rgba(255,255,255,.10);
+    }
+
+    h1, h2 {
+      color: #ffffff;
+    }
+
+    .meta {
+      font-size: 14px;
+      color: rgba(232,236,243,.65);
+      margin-bottom: 28px;
+    }
+
+    p {
+      margin-bottom: 18px;
+    }
+
+    .footer {
+      margin-top: 48px;
+      font-size: 13px;
+      color: rgba(232,236,243,.6);
+      border-top: 1px solid rgba(255,255,255,.1);
+      padding-top: 16px;
+    }
+  </style>
 </head>
 
 <body>
-<main class="wrap">
-<nav class="nav">
-  <div class="nav-inner">
-    <a href="/">Home</a>
-    <a href="/articles/">Articles</a>
-    <a href="/investors/">Investors</a>
-  </div>
-</nav>
+  <main class="wrap">
 
-<h1>AI Agents: From Interaction to Execution</h1>
+    <nav class="nav">
+      <div class="nav-inner">
+        <a href="/">Home</a>
+        <a href="/articles/">Articles</a>
+        <a href="/investors/">Investors</a>
+      </div>
+    </nav>
 
-<p>
-Traditional AI systems respond. AI agents act.
-</p>
+    <h1>AI Agents: From Interaction to Execution</h1>
+    <div class="meta">Article 002 · Applied AI</div>
 
-<p>
-The shift from conversational interfaces to autonomous execution marks a fundamental
-change in how software creates value.
-</p>
+    <p>
+      For years, artificial intelligence systems have been designed primarily
+      for interaction — answering questions, generating text, or providing
+      recommendations.
+    </p>
 
-<p>
-Agents can plan tasks, call tools, coordinate systems, and operate within defined
-constraints — turning AI from an assistant into an operator.
-</p>
+    <p>
+      AI agents represent a fundamental shift. Rather than responding to prompts,
+      agents are built to plan, decide, and execute actions across systems.
+    </p>
 
-<p>
-This evolution introduces both opportunity and responsibility.
-Execution at scale requires trust, visibility, and control.
-</p>
+    <p>
+      This transition transforms AI from a passive assistant into an active
+      participant in digital workflows.
+    </p>
 
-<div class="footer">© <span id="y"></span> AgentDub.ai</div>
-</main>
+    <p>
+      Modern agents can call tools, interact with APIs, manage state, and
+      coordinate with other agents to complete complex objectives.
+    </p>
 
-<script>document.getElementById("y").textContent=new Date().getFullYear();</script>
+    <p>
+      The implications are significant. Execution introduces new risks —
+      but also unlocks unprecedented efficiency and scalability.
+    </p>
+
+    <p>
+      As organizations move toward agent-driven systems, success will depend
+      not only on model capability, but on how execution is constrained,
+      observed, and governed.
+    </p>
+
+    <div class="footer">© <span id="y"></span> AgentDub.ai</div>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
