@@ -3,20 +3,16 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AgentDub.ai — Intelligence on AI Agents & Digital Transformation</title>
-  <meta name="description" content="AgentDub.ai is an independent intelligence platform focused on AI agents, autonomous systems, and digital transformation across Dubai and the Gulf." />
+  <title>AgentDub.ai — AI Agents & Digital Transformation</title>
 
   <style>
-    :root { color-scheme: light; }
+    :root { color-scheme: dark; }
 
     body {
       margin: 0;
       font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      background:
-        radial-gradient(1200px 600px at 10% 0%, rgba(255,186,120,.25), transparent 60%),
-        radial-gradient(1000px 600px at 90% 10%, rgba(120,170,255,.22), transparent 60%),
-        #faf7f2;
-      color: #1f2937;
+      background: #0b0f19;
+      color: #e8ecf3;
       line-height: 1.6;
     }
 
@@ -24,26 +20,19 @@
 
     .nav {
       display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-bottom: 28px;
+      gap: 14px;
+      margin-bottom: 32px;
     }
+
     .nav a {
-      padding: 8px 12px;
-      border: 1px solid rgba(0,0,0,.1);
-      border-radius: 999px;
-      background: rgba(255,255,255,.7);
-      color: #0f172a;
-      font-size: 14px;
+      color: #9fd0ff;
       text-decoration: none;
+      font-size: 14px;
     }
-    .nav a:hover { background: rgba(255,255,255,.95); }
 
-    h1 { font-size: 42px; margin-bottom: 10px; color: #0f172a; }
-    h2 { margin-top: 32px; color: #0f172a; }
+    h1, h2 { color: #ffffff; }
 
-    p, li { color: #1f2937; }
-    a { color: #2563eb; text-decoration: none; }
+    a { color: #9fd0ff; text-decoration: none; }
     a:hover { text-decoration: underline; }
 
     ul { padding-left: 18px; }
@@ -51,8 +40,8 @@
     .footer {
       margin-top: 48px;
       font-size: 13px;
-      color: #64748b;
-      border-top: 1px solid rgba(0,0,0,.08);
+      color: rgba(232,236,243,.6);
+      border-top: 1px solid rgba(255,255,255,.1);
       padding-top: 16px;
     }
   </style>
@@ -61,4 +50,29 @@
 <body>
   <main class="wrap">
     <nav class="nav">
-      <a href
+      <a href="/">Home</a>
+      <a href="/articles/">Articles</a>
+      <a href="/investors/">Investors</a>
+    </nav>
+
+    <img src="/logo.png" alt="AgentDub.ai logo" style="height:200px; margin-bottom:32px;" />
+
+    <h1>Intelligence on AI Agents & Digital Transformation</h1>
+    <p>Independent analysis across Dubai and the Gulf.</p>
+
+    <h2>Latest Articles</h2>
+    <ul>
+      <li><a href="/articles/004.html">004 — What “Agent-Ready” Infrastructure Really Means</a></li>
+      <li><a href="/articles/003.html">003 — AI Agents Need Governance Before Scale</a></li>
+      <li><a href="/articles/002.html">002 — AI Agents: From Interaction to Execution</a></li>
+      <li><a href="/articles/001.html">001 — Welcome to AgentDub.ai</a></li>
+    </ul>
+
+    <div class="footer">© <span id="y"></span> AgentDub.ai</div>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
