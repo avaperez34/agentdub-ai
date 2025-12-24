@@ -4,54 +4,28 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Articles — AgentDub.ai</title>
-  <meta name="description" content="All articles published by AgentDub.ai on AI agents, digital transformation, and applied artificial intelligence across Dubai and the Gulf." />
 
   <style>
-    :root { color-scheme: light; }
-
+    :root { color-scheme: dark; }
     body {
       margin: 0;
       font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      background:
-        radial-gradient(1200px 600px at 10% 0%, rgba(255, 186, 120, 0.25), transparent 60%),
-        radial-gradient(1000px 600px at 90% 10%, rgba(120, 170, 255, 0.22), transparent 60%),
-        #faf7f2;
-      color: #1f2937;
+      background: #0b0f19;
+      color: #e8ecf3;
       line-height: 1.6;
     }
-
     .wrap { max-width: 860px; margin: 0 auto; padding: 56px 20px; }
-
-    a { color: #2563eb; text-decoration: none; }
+    .nav { display: flex; gap: 14px; margin-bottom: 32px; flex-wrap: wrap; }
+    .nav a { color: #9fd0ff; text-decoration: none; font-size: 14px; }
+    .nav a:hover { text-decoration: underline; }
+    a { color: #9fd0ff; text-decoration: none; }
     a:hover { text-decoration: underline; }
-
-    h1, h2, h3 { color: #0f172a; }
-    p, li { color: #1f2937; }
-
-    .sub { color: #475569; margin-bottom: 28px; }
-
-    .nav { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 22px; }
-    .nav a {
-      padding: 8px 12px;
-      border: 1px solid rgba(0,0,0,.10);
-      border-radius: 999px;
-      background: rgba(255,255,255,.65);
-      color: #0f172a;
-      font-size: 14px;
-    }
-    .nav a:hover { background: rgba(255,255,255,.9); }
-
-    ul { list-style: none; padding: 0; }
-    li { padding: 14px 0; border-bottom: 1px solid rgba(0,0,0,.08); }
-
-    .num { font-size: 12px; letter-spacing: .12em; opacity: .7; display: block; }
-    .title { font-size: 18px; }
-
+    li { padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,.10); }
     .footer {
       margin-top: 40px;
       font-size: 13px;
-      color: #64748b;
-      border-top: 1px solid rgba(0,0,0,.08);
+      color: rgba(232,236,243,.6);
+      border-top: 1px solid rgba(255,255,255,.10);
       padding-top: 16px;
     }
   </style>
@@ -65,31 +39,16 @@
       <a href="/investors/">Investors</a>
     </nav>
 
-    <p><a href="/">← Back to home</a></p>
-
     <h1>Articles</h1>
-    <p class="sub">Analysis and perspectives published by AgentDub.ai</p>
 
     <ul>
-      <li>
-        <span class="num">004</span>
-        <a class="title" href="/articles/004.html">What “Agent-Ready” Infrastructure Really Means</a>
-      </li>
-      <li>
-        <span class="num">003</span>
-        <a class="title" href="/articles/003.html">AI Agents Need Governance Before Scale</a>
-      </li>
-      <li>
-        <span class="num">002</span>
-        <a class="title" href="/articles/002.html">AI Agents: From Interaction to Execution</a>
-      </li>
-      <li>
-        <span class="num">001</span>
-        <a class="title" href="/articles/001.html">Welcome to AgentDub.ai</a>
-      </li>
+      <li><a href="/articles/004.html">004 — What “Agent-Ready” Infrastructure Really Means</a></li>
+      <li><a href="/articles/003.html">003 — AI Agents Need Governance Before Scale</a></li>
+      <li><a href="/articles/002.html">002 — AI Agents: From Interaction to Execution</a></li>
+      <li><a href="/articles/001.html">001 — Welcome to AgentDub.ai</a></li>
     </ul>
 
-    <p class="footer">© <span id="y"></span> AgentDub.ai</p>
+    <div class="footer">© <span id="y"></span> AgentDub.ai</div>
   </main>
 
   <script>
