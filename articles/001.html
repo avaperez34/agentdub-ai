@@ -1,110 +1,63 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>001 — Welcome to AgentDub.ai</title>
-  <meta name="description" content="A short introduction to AgentDub.ai and what to expect." />
- :root { color-scheme: light; }
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>001 — Welcome to AgentDub.ai</title>
 
+<style>
+:root { color-scheme: light; }
 body {
-  margin: 0;
+  margin:0;
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   background:
-    radial-gradient(1200px 600px at 10% 0%, rgba(255, 186, 120, 0.25), transparent 60%),
-    radial-gradient(1000px 600px at 90% 10%, rgba(120, 170, 255, 0.22), transparent 60%),
+    radial-gradient(1200px 600px at 10% 0%, rgba(255,186,120,.25), transparent 60%),
+    radial-gradient(1000px 600px at 90% 10%, rgba(120,170,255,.22), transparent 60%),
     #faf7f2;
-  color: #1f2937;
-  line-height: 1.6;
+  color:#1f2937;
+  line-height:1.6;
 }
-
-.wrap {
-  max-width: 860px;
-  margin: 0 auto;
-  padding: 56px 20px;
-}
-
-a {
-  color: #2563eb;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-
-h1, h2, h3 {
-  color: #0f172a;
-}
-
-p, li {
-  color: #1f2937;
-}
-
-.sub {
-  color: #475569;
-}
-
-.nav {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-bottom: 22px;
-}
-
+.wrap { max-width:860px; margin:0 auto; padding:56px 20px; }
+.nav { display:flex; gap:12px; margin-bottom:28px; }
 .nav a {
-  padding: 8px 12px;
-  border: 1px solid rgba(0,0,0,.10);
-  border-radius: 999px;
-  background: rgba(255,255,255,.65);
-  color: #0f172a;
-  text-decoration: none;
-  font-size: 14px;
+  padding:8px 12px;
+  border:1px solid rgba(0,0,0,.1);
+  border-radius:999px;
+  background:rgba(255,255,255,.7);
+  color:#0f172a;
+  text-decoration:none;
+  font-size:14px;
 }
-
-.nav a:hover {
-  background: rgba(255,255,255,.9);
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  padding: 14px 0;
-  border-bottom: 1px solid rgba(0,0,0,.08);
-}
-
+h1,h2 { color:#0f172a; }
+.meta { color:#475569; margin-bottom:24px; }
 .footer {
-  margin-top: 40px;
-  font-size: 13px;
-  color: #64748b;
-  border-top: 1px solid rgba(0,0,0,.08);
-  padding-top: 16px;
+  margin-top:48px;
+  font-size:13px;
+  color:#64748b;
+  border-top:1px solid rgba(0,0,0,.08);
+  padding-top:16px;
 }
-
+</style>
 </head>
+
 <body>
-  <main class="wrap">
-    <p><a href="/">← Back to home</a></p>
+<main class="wrap">
+<nav class="nav">
+<a href="/">Home</a>
+<a href="/articles/">Articles</a>
+<a href="/investors/">Investors</a>
+</nav>
 
-    <h1>Welcome to AgentDub.ai</h1>
-    <div class="meta">Article 001 · Published <span id="d"></span></div>
+<h1>Welcome to AgentDub.ai</h1>
+<div class="meta">Article 001</div>
 
-    <p>AgentDub.ai is an independent intelligence platform focused on AI agents, autonomous systems, and applied AI shaping Dubai’s digital future.</p>
-    <p>This site will publish concise, high-signal analysis every 1–2 days — covering AI agent orchestration, sovereign AI, infrastructure, and execution signals across Dubai and the Gulf.</p>
+<p>AgentDub.ai is an independent intelligence platform focused on AI agents, autonomous systems, and applied artificial intelligence shaping Dubai’s digital future.</p>
 
-    <div class="card">
-      <strong>Contact</strong><br />
-      <a href="mailto:contact@domainelysee.com">contact@domainelysee.com</a>
-    </div>
+<p>This publication delivers concise, high-signal analysis designed for builders, investors, and decision-makers operating at scale.</p>
 
-    <p class="footer">© <span id="y"></span> AgentDub.ai</p>
-  </main>
+<div class="footer">© <span id="y"></span> AgentDub.ai</div>
+</main>
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-    document.getElementById("d").textContent = new Date().toLocaleDateString("en-GB", { year:"numeric", month:"long", day:"numeric" });
-  </script>
+<script>document.getElementById("y").textContent=new Date().getFullYear();</script>
 </body>
 </html>
