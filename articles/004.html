@@ -1,56 +1,146 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>004 — What “Agent-Ready” Infrastructure Really Means</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>004 — What “Agent-Ready” Infrastructure Really Means</title>
 
-<style>
-:root{color-scheme:dark;}
-body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#0b0f19;color:#e8ecf3;line-height:1.6;}
-.wrap{max-width:860px;margin:0 auto;padding:56px 20px;}
-.nav{display:flex;gap:14px;margin-bottom:32px;}
-.nav a{color:#9fd0ff;text-decoration:none;font-size:14px;}
-h1,h2{color:#fff;}
-.footer{margin-top:48px;font-size:13px;color:rgba(232,236,243,.6);border-top:1px solid rgba(255,255,255,.1);padding-top:16px;}
-</style>
+  <style>
+    :root { color-scheme: dark; }
+
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: #0b0f19;
+      color: #e8ecf3;
+      line-height: 1.6;
+    }
+
+    .wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 56px 20px;
+    }
+
+    /* NAV */
+    .nav{
+      display:flex;
+      justify-content:center;
+      margin-bottom:40px;
+    }
+
+    .nav-inner{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:10px;
+      border-radius:999px;
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.14);
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+    }
+
+    .nav-inner a{
+      color:#9fd0ff;
+      text-decoration:none;
+      font-size:14px;
+      padding:8px 14px;
+      border-radius:999px;
+      line-height:1;
+    }
+
+    .nav-inner a:hover{
+      background: rgba(255,255,255,.10);
+    }
+
+    h1, h2 {
+      color: #ffffff;
+    }
+
+    .meta {
+      font-size: 14px;
+      color: rgba(232,236,243,.65);
+      margin-bottom: 28px;
+    }
+
+    p {
+      margin-bottom: 18px;
+    }
+
+    ul {
+      padding-left: 18px;
+      margin-bottom: 18px;
+    }
+
+    .footer {
+      margin-top: 48px;
+      font-size: 13px;
+      color: rgba(232,236,243,.6);
+      border-top: 1px solid rgba(255,255,255,.1);
+      padding-top: 16px;
+    }
+  </style>
 </head>
 
 <body>
-<main class="wrap">
-<nav class="nav">
-  <div class="nav-inner">
-    <a href="/">Home</a>
-    <a href="/articles/">Articles</a>
-    <a href="/investors/">Investors</a>
-  </div>
-</nav>
+  <main class="wrap">
 
-<h1>What “Agent-Ready” Infrastructure Really Means</h1>
+    <nav class="nav">
+      <div class="nav-inner">
+        <a href="/">Home</a>
+        <a href="/articles/">Articles</a>
+        <a href="/investors/">Investors</a>
+      </div>
+    </nav>
 
-<p>
-Agent-ready systems are not defined by models alone.
-They are defined by architecture.
-</p>
+    <h1>What “Agent-Ready” Infrastructure Really Means</h1>
+    <div class="meta">Article 004 · Infrastructure</div>
 
-<p>
-Identity, access control, orchestration, monitoring,
-and secure execution boundaries are essential components.
-</p>
+    <p>
+      Many organizations assume that deploying AI agents is primarily a model problem.
+      In reality, most failures happen at the infrastructure layer.
+    </p>
 
-<p>
-Without these layers, agents remain tools.
-With them, agents become infrastructure.
-</p>
+    <p>
+      “Agent-ready” infrastructure means the environment is designed for autonomous execution —
+      with guardrails, visibility, and reliable integration into real systems.
+    </p>
 
-<p>
-This distinction will determine which organizations
-successfully deploy autonomous systems at scale.
-</p>
+    <h2>Models are not enough</h2>
 
-<div class="footer">© <span id="y"></span> AgentDub.ai</div>
-</main>
+    <p>
+      Even the best model will fail if it operates inside fragile tooling, has unclear access rights,
+      or lacks monitoring. Agents are not just generators — they are actors.
+    </p>
 
-<script>document.getElementById("y").textContent=new Date().getFullYear();</script>
+    <h2>What agent-ready systems require</h2>
+
+    <ul>
+      <li><strong>Identity and access control</strong> — strict permissions per tool and data source</li>
+      <li><strong>Execution boundaries</strong> — limits on scope, time, cost, and sensitive actions</li>
+      <li><strong>Orchestration</strong> — structured workflows, retries, fallbacks, and state management</li>
+      <li><strong>Observability</strong> — logs, traces, alerts, and human-readable audit trails</li>
+      <li><strong>Human-in-the-loop controls</strong> — approvals for critical steps</li>
+      <li><strong>Secure integration</strong> — safe connectors to APIs, databases, and internal systems</li>
+    </ul>
+
+    <h2>Infrastructure is strategy</h2>
+
+    <p>
+      Organizations that treat agents as infrastructure — not as experiments — will scale faster,
+      reduce risk, and create durable competitive advantage.
+    </p>
+
+    <p>
+      In a region accelerating applied AI adoption, the winners will be those that build systems
+      that can safely support autonomy in production.
+    </p>
+
+    <div class="footer">© <span id="y"></span> AgentDub.ai</div>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
