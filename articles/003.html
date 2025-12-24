@@ -3,138 +3,66 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>003 — AI Agents Need Governance Before Scale</title>
-  <meta name="description" content="Why AI agents can only scale sustainably with governance, identity, permissions, and trust frameworks." />
+  <title>Articles — AgentDub.ai</title>
 
-  :root { color-scheme: light; }
+  <style>
+    :root { color-scheme: dark; }
 
-body {
-  margin: 0;
-  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  background:
-    radial-gradient(1200px 600px at 10% 0%, rgba(255, 186, 120, 0.25), transparent 60%),
-    radial-gradient(1000px 600px at 90% 10%, rgba(120, 170, 255, 0.22), transparent 60%),
-    #faf7f2;
-  color: #1f2937;
-  line-height: 1.6;
-}
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: #0b0f19;
+      color: #e8ecf3;
+      line-height: 1.6;
+    }
 
-.wrap {
-  max-width: 860px;
-  margin: 0 auto;
-  padding: 56px 20px;
-}
+    .wrap { max-width: 860px; margin: 0 auto; padding: 56px 20px; }
 
-a {
-  color: #2563eb;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
+    .nav {
+      display: flex;
+      gap: 14px;
+      margin-bottom: 32px;
+    }
 
-h1, h2, h3 {
-  color: #0f172a;
-}
+    .nav a { color: #9fd0ff; text-decoration: none; }
 
-p, li {
-  color: #1f2937;
-}
+    li {
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(255,255,255,.1);
+    }
 
-.sub {
-  color: #475569;
-}
-
-.nav {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-bottom: 22px;
-}
-
-.nav a {
-  padding: 8px 12px;
-  border: 1px solid rgba(0,0,0,.10);
-  border-radius: 999px;
-  background: rgba(255,255,255,.65);
-  color: #0f172a;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.nav a:hover {
-  background: rgba(255,255,255,.9);
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  padding: 14px 0;
-  border-bottom: 1px solid rgba(0,0,0,.08);
-}
-
-.footer {
-  margin-top: 40px;
-  font-size: 13px;
-  color: #64748b;
-  border-top: 1px solid rgba(0,0,0,.08);
-  padding-top: 16px;
-}
-
+    .footer {
+      margin-top: 40px;
+      font-size: 13px;
+      color: rgba(232,236,243,.6);
+      border-top: 1px solid rgba(255,255,255,.1);
+      padding-top: 16px;
+    }
+  </style>
 </head>
 
 <body>
   <main class="wrap">
-    <p><a href="/">← Back to home</a></p>
+    <nav class="nav">
+      <a href="/">Home</a>
+      <a href="/articles/">Articles</a>
+      <a href="/investors/">Investors</a>
+    </nav>
 
-    <h1>AI Agents Need Governance Before Scale</h1>
-    <div class="meta">Article 003 · Published <span id="d"></span></div>
+    <h1>Articles</h1>
 
-    <p>As AI agents move from experimentation into real-world deployment, a critical constraint emerges: <strong>trust</strong>.</p>
+    <ul>
+      <li><a href="/articles/004.html">004 — What “Agent-Ready” Infrastructure Really Means</a></li>
+      <li><a href="/articles/003.html">003 — AI Agents Need Governance Before Scale</a></li>
+      <li><a href="/articles/002.html">002 — AI Agents: From Interaction to Execution</a></li>
+      <li><a href="/articles/001.html">001 — Welcome to AgentDub.ai</a></li>
+    </ul>
 
-    <p>Autonomous systems that can plan, decide, and act introduce a different category of risk than traditional software. At scale, the question is no longer whether agents are capable — but whether they are governable.</p>
-
-    <h2>Why Capability Is Not the Bottleneck</h2>
-
-    <p>The underlying models are improving rapidly. Tool use, planning, memory, and orchestration are no longer theoretical.</p>
-
-    <p>The real bottlenecks are operational: identity, permissions, auditability, and accountability. Without these layers, agents remain confined to sandboxes.</p>
-
-    <h2>Governance as an Enabler, Not a Constraint</h2>
-
-    <p>Governance is often framed as friction. In reality, it is what allows systems to scale safely.</p>
-
-    <p>Clear rules define where an agent can act, what data it can access, how decisions are logged, and how outcomes are reviewed. This transforms agents from experimental tools into reliable infrastructure.</p>
-
-    <h2>Why This Matters for Large-Scale Transformation</h2>
-
-    <p>Governments and large enterprises do not deploy systems they cannot explain, control, or audit.</p>
-
-    <p>For AI agents to operate across critical workflows — finance, logistics, healthcare, public services — governance must be embedded by design, not added later.</p>
-
-    <h2>Dubai’s Strategic Position</h2>
-
-    <p>Dubai’s approach to AI emphasizes execution with structure.</p>
-
-    <p>The opportunity is not only to deploy agents faster, but to define the frameworks that make agent-based systems trustworthy at national and regional scale.</p>
-
-    <p><strong>AgentDub.ai</strong> will continue analyzing how governance, identity, and trust models shape the next phase of AI agent adoption.</p>
-
-    <div class="card">
-      <strong>Contact</strong><br />
-      <a href="mailto:contact@domainelysee.com">contact@domainelysee.com</a>
-    </div>
-
-    <p class="footer">© <span id="y"></span> AgentDub.ai</p>
+    <div class="footer">© <span id="y"></span> AgentDub.ai</div>
   </main>
 
   <script>
     document.getElementById("y").textContent = new Date().getFullYear();
-    document.getElementById("d").textContent = new Date().toLocaleDateString("en-GB", { year:"numeric", month:"long", day:"numeric" });
   </script>
 </body>
 </html>
-
