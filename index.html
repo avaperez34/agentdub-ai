@@ -18,30 +18,33 @@
 
     .wrap { max-width: 860px; margin: 0 auto; padding: 56px 20px; }
 
-   .nav {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
+ .nav{
+  display:flex;
+  justify-content:center;
+  margin-bottom:40px;
 }
 
-.nav-inner {
-  display: flex;
-  gap: 18px;
-  padding: 10px 18px;
-  border-radius: 999px;
-  background: rgba(255,255,255,.04);
-  border: 1px solid rgba(255,255,255,.12);
+.nav-inner{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:10px;
+  border-radius:999px;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.14);
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
 }
 
-.nav-inner a {
-  color: #9fd0ff;
-  text-decoration: none;
-  font-size: 14px;
-  padding: 6px 12px;
-  border-radius: 999px;
+.nav-inner a{
+  color:#9fd0ff;
+  text-decoration:none;
+  font-size:14px;
+  padding:8px 14px;
+  border-radius:999px;
+  line-height:1;
 }
 
-.nav-inner a:hover {
+.nav-inner a:hover{
   background: rgba(255,255,255,.10);
 }
 
@@ -66,11 +69,13 @@
 <body>
   <main class="wrap">
 
-    <nav class="nav">
-      <a href="/">Home</a>
-      <a href="/articles/">Articles</a>
-      <a href="/investors/">Investors</a>
-    </nav>
+   <nav class="nav">
+  <div class="nav-inner">
+    <a href="/">Home</a>
+    <a href="/articles/">Articles</a>
+    <a href="/investors/">Investors</a>
+  </div>
+</nav>
 
     <img src="/logo.png" alt="AgentDub.ai logo" style="height:200px; margin-bottom:32px;" />
 
