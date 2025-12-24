@@ -1,1 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>002 — Welcome to AgentDub.ai</title>
+  <meta name="description" content="A short introduction to AgentDub.ai and what to expect." />
+  <style>
+    :root { color-scheme: dark; }
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background:#0b0f19; color:#e8ecf3; line-height:1.6; }
+    .wrap { max-width: 860px; margin: 0 auto; padding: 56px 20px; }
+    a { color:#9fd0ff; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    h1 { margin: 10px 0 6px; font-size: 34px; letter-spacing: -0.02em; }
+    .meta { color: rgba(232,236,243,.65); font-size: 14px; margin-bottom: 22px; }
+    .card { margin-top: 26px; padding: 14px 16px; border-radius: 16px; border: 1px solid rgba(255,255,255,.10); background: rgba(255,255,255,.03); }
+    .footer { margin-top: 34px; font-size: 13px; color: rgba(232,236,243,.6); border-top: 1px solid rgba(255,255,255,.10); padding-top: 16px; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <p><a href="/">← Back to home</a></p>
+
+    <h1>Welcome to AgentDub.ai</h1>
+    <div class="meta">Article 001 · Published <span id="d"></span></div>
+
+    <p>AgentDub.ai is an independent intelligence platform focused on AI agents, autonomous systems, and applied AI shaping Dubai’s digital future.</p>
+    <p>This site will publish concise, high-signal analysis every 1–2 days — covering AI agent orchestration, sovereign AI, infrastructure, and execution signals across Dubai and the Gulf.</p>
+
+    <div class="card">
+      <strong>Contact</strong><br />
+      <a href="mailto:contact@domainelysee.com">contact@domainelysee.com</a>
+    </div>
+
+    <p class="footer">© <span id="y"></span> AgentDub.ai</p>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+    document.getElementById("d").textContent = new Date().toLocaleDateString("en-GB", { year:"numeric", month:"long", day:"numeric" });
+  </script>
+</body>
+</html>
 
