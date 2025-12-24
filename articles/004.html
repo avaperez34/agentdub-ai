@@ -1,144 +1,63 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>004 — What “Agent-Ready” Infrastructure Really Means</title>
-  <meta name="description" content="Agent adoption at scale depends less on models and more on infrastructure: identity, data access, security boundaries, and orchestration." />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>004 — What “Agent-Ready” Infrastructure Really Means</title>
 
-  :root { color-scheme: light; }
-
+<style>
+:root { color-scheme: light; }
 body {
-  margin: 0;
+  margin:0;
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   background:
-    radial-gradient(1200px 600px at 10% 0%, rgba(255, 186, 120, 0.25), transparent 60%),
-    radial-gradient(1000px 600px at 90% 10%, rgba(120, 170, 255, 0.22), transparent 60%),
+    radial-gradient(1200px 600px at 10% 0%, rgba(255,186,120,.25), transparent 60%),
+    radial-gradient(1000px 600px at 90% 10%, rgba(120,170,255,.22), transparent 60%),
     #faf7f2;
-  color: #1f2937;
-  line-height: 1.6;
+  color:#1f2937;
+  line-height:1.6;
 }
-
-.wrap {
-  max-width: 860px;
-  margin: 0 auto;
-  padding: 56px 20px;
-}
-
-a {
-  color: #2563eb;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-
-h1, h2, h3 {
-  color: #0f172a;
-}
-
-p, li {
-  color: #1f2937;
-}
-
-.sub {
-  color: #475569;
-}
-
-.nav {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-bottom: 22px;
-}
-
+.wrap { max-width:860px; margin:0 auto; padding:56px 20px; }
+.nav { display:flex; gap:12px; margin-bottom:28px; }
 .nav a {
-  padding: 8px 12px;
-  border: 1px solid rgba(0,0,0,.10);
-  border-radius: 999px;
-  background: rgba(255,255,255,.65);
-  color: #0f172a;
-  text-decoration: none;
-  font-size: 14px;
+  padding:8px 12px;
+  border:1px solid rgba(0,0,0,.1);
+  border-radius:999px;
+  background:rgba(255,255,255,.7);
+  color:#0f172a;
+  text-decoration:none;
+  font-size:14px;
 }
-
-.nav a:hover {
-  background: rgba(255,255,255,.9);
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  padding: 14px 0;
-  border-bottom: 1px solid rgba(0,0,0,.08);
-}
-
+h1,h2 { color:#0f172a; }
+.meta { color:#475569; margin-bottom:24px; }
 .footer {
-  margin-top: 40px;
-  font-size: 13px;
-  color: #64748b;
-  border-top: 1px solid rgba(0,0,0,.08);
-  padding-top: 16px;
+  margin-top:48px;
+  font-size:13px;
+  color:#64748b;
+  border-top:1px solid rgba(0,0,0,.08);
+  padding-top:16px;
 }
-
+</style>
 </head>
 
 <body>
-  <main class="wrap">
-    <p><a href="/">← Back to home</a></p>
+<main class="wrap">
+<nav class="nav">
+<a href="/">Home</a>
+<a href="/articles/">Articles</a>
+<a href="/investors/">Investors</a>
+</nav>
 
-    <h1>What “Agent-Ready” Infrastructure Really Means</h1>
-    <div class="meta">Article 004 · Published <span id="d"></span></div>
+<h1>What “Agent-Ready” Infrastructure Really Means</h1>
+<div class="meta">Article 004</div>
 
-    <p>Most discussions about AI agents focus on model capability. But at scale, the differentiator is infrastructure.</p>
+<p>AI agents require more than capable models. They require infrastructure designed for autonomy.</p>
 
-    <p>To deploy agents safely inside governments and enterprises, the question becomes: <strong>can an agent operate within trusted boundaries?</strong></p>
+<p>Identity, access control, orchestration, and auditability define whether agents remain demos or become infrastructure.</p>
 
-    <h2>Agents Need More Than an API Key</h2>
+<div class="footer">© <span id="y"></span> AgentDub.ai</div>
+</main>
 
-    <p>In real workflows, agents must interact with data, tools, and systems that were not designed for autonomous actors.</p>
-
-    <p>Without strong foundations — identity, permissions, audit logs, and policy controls — agent deployments remain confined to demos.</p>
-
-    <h2>The Four Layers of “Agent-Ready” Systems</h2>
-
-    <p>Agent readiness is not one technology. It is a stack. Four layers matter most:</p>
-
-    <ul>
-      <li><strong>Identity &amp; access:</strong> who the agent is, what it can do, and how it authenticates.</li>
-      <li><strong>Data governance:</strong> which data the agent can read, write, and share — and under which rules.</li>
-      <li><strong>Security boundaries:</strong> sandboxing, rate limits, safe tool execution, and containment.</li>
-      <li><strong>Orchestration &amp; observability:</strong> monitoring, audit trails, approval steps, and outcome reporting.</li>
-    </ul>
-
-    <p>When these layers are integrated, agents become operationally trustworthy — and therefore deployable.</p>
-
-    <h2>Why “Sovereign AI” Connects Directly to Agents</h2>
-
-    <p>As agents gain autonomy, infrastructure decisions become strategic. Where data resides, who controls compute, and how models are governed shape what is possible.</p>
-
-    <p>This is why many jurisdictions are prioritizing sovereign or region-controlled AI capabilities. It is not only about independence — it is about <strong>operational control</strong>.</p>
-
-    <h2>Dubai’s Opportunity: Define the Blueprint</h2>
-
-    <p>Dubai is positioned to go beyond adoption and toward blueprint-setting: not only deploying agents, but defining how agent systems are governed, audited, and scaled across critical workflows.</p>
-
-    <p><strong>AgentDub.ai</strong> will track the platforms, policies, and infrastructure patterns that make agent deployment credible at scale.</p>
-
-    <div class="card">
-      <strong>Contact</strong><br />
-      <a href="mailto:contact@domainelysee.com">contact@domainelysee.com</a>
-    </div>
-
-    <p class="footer">© <span id="y"></span> AgentDub.ai</p>
-  </main>
-
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-    document.getElementById("d").textContent = new Date().toLocaleDateString("en-GB", { year:"numeric", month:"long", day:"numeric" });
-  </script>
+<script>document.getElementById("y").textContent=new Date().getFullYear();</script>
 </body>
 </html>
