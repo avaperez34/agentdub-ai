@@ -22,6 +22,7 @@
       display: flex;
       gap: 14px;
       margin-bottom: 32px;
+      flex-wrap: wrap;
     }
 
     .nav a {
@@ -29,6 +30,7 @@
       text-decoration: none;
       font-size: 14px;
     }
+    .nav a:hover { text-decoration: underline; }
 
     h1, h2 { color: #ffffff; }
 
@@ -48,61 +50,55 @@
 </head>
 
 <body>
- <h1>Intelligence on AI Agents & Digital Transformation</h1>
+  <main class="wrap">
 
-<p>
-<strong>AgentDub.ai</strong> is an independent editorial platform dedicated to the rise of AI agents,
-autonomous systems, and applied artificial intelligence shaping the next phase of digital transformation.
-</p>
+    <nav class="nav">
+      <a href="/">Home</a>
+      <a href="/articles/">Articles</a>
+      <a href="/investors/">Investors</a>
+    </nav>
 
-<p>
-Our focus is on execution, infrastructure, and governance — not hype.
-We publish concise, high-signal analysis for founders, investors, executives,
-and institutions operating across Dubai and the Gulf region.
-</p>
+    <img src="/logo.png" alt="AgentDub.ai logo" style="height:200px; margin-bottom:32px;" />
 
-<h2>Why AgentDub.ai</h2>
+    <h1>Intelligence on AI Agents & Digital Transformation</h1>
 
-<p>
-AI agents are moving from experimentation into real-world deployment.
-This transition raises fundamental questions around trust, control, scalability,
-and economic impact.
-</p>
+    <p>
+      <strong>AgentDub.ai</strong> is an independent editorial platform dedicated to the rise of AI agents,
+      autonomous systems, and applied artificial intelligence shaping the next phase of digital transformation.
+    </p>
 
-<p>
-AgentDub.ai exists to document this shift — clearly, independently, and with
-a regional lens aligned with Dubai’s ambition to lead in applied AI.
-</p>
+    <p>
+      Our focus is on execution, infrastructure, and governance — not hype.
+      We publish concise, high-signal analysis for founders, investors, executives,
+      and institutions operating across Dubai and the Gulf region.
+    </p>
 
-<h2>Latest Articles</h2>
+    <h2>Why AgentDub.ai</h2>
 
-<ul>
-  <li>
-    <a href="/articles/004.html">
-      004 — What “Agent-Ready” Infrastructure Really Means
-    </a>
-  </li>
-  <li>
-    <a href="/articles/003.html">
-      003 — AI Agents Need Governance Before Scale
-    </a>
-  </li>
-  <li>
-    <a href="/articles/002.html">
-      002 — AI Agents: From Interaction to Execution
-    </a>
-  </li>
-  <li>
-    <a href="/articles/001.html">
-      001 — Welcome to AgentDub.ai
-    </a>
-  </li>
-</ul>
+    <p>
+      AI agents are moving from experimentation into real-world deployment.
+      This transition raises fundamental questions around trust, control, scalability,
+      and economic impact.
+    </p>
 
-<p>
-<a href="/articles/">View all articles →</a>
-</p>
+    <p>
+      AgentDub.ai exists to document this shift — clearly, independently, and with
+      a regional lens aligned with Dubai’s ambition to lead in applied AI.
+    </p>
 
+    <h2>Latest Articles</h2>
+
+    <ul>
+      <li><a href="/articles/004.html">004 — What “Agent-Ready” Infrastructure Really Means</a></li>
+      <li><a href="/articles/003.html">003 — AI Agents Need Governance Before Scale</a></li>
+      <li><a href="/articles/002.html">002 — AI Agents: From Interaction to Execution</a></li>
+      <li><a href="/articles/001.html">001 — Welcome to AgentDub.ai</a></li>
+    </ul>
+
+    <p><a href="/articles/">View all articles →</a></p>
+
+    <div class="footer">© <span id="y"></span> AgentDub.ai</div>
+  </main>
 
   <script>
     document.getElementById("y").textContent = new Date().getFullYear();
