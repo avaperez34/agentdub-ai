@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
     <loc>https://agentdub.ai/</loc>
-    <lastmod>2025-01-01</lastmod>
+    <priority>1.0</priority>
   </url>
+
   <url>
-    <loc>https://agentdub.ai/articles/001.html</loc>
+    <loc>https://agentdub.ai/sentinel.html</loc>
+    <priority>0.9</priority>
   </url>
+
   <url>
-    <loc>https://agentdub.ai/articles/002.html</loc>
+    <loc>https://agentdub.ai/intelligence.html</loc>
+    <priority>0.9</priority>
   </url>
+
   <url>
-    <loc>https://agentdub.ai/articles/003.html</loc>
+    <loc>https://agentdub.ai/investors/</loc>
+    <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://agentdub.ai/articles/004.html</loc>
-  </url>
+
 </urlset>
+
