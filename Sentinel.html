@@ -1,3 +1,283 @@
-<h1>AgentDub Sentinel</h1>
-<p>Strategic intelligence agent monitoring Dubai’s AI transformation.</p>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AgentDub Sentinel — Strategic AI Intelligence Agent</title>
+  <meta name="description" content="AgentDub Sentinel is a strategic intelligence agent monitoring Dubai & GCC AI transformation: infrastructure, regulation, capital, and enterprise adoption." />
 
+  <!-- Open Graph -->
+  <meta property="og:title" content="AgentDub Sentinel — Strategic AI Intelligence Agent" />
+  <meta property="og:description" content="Signal, not noise. Continuous intelligence on Dubai & GCC AI transformation." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://agentdub.ai/sentinel.html" />
+  <meta property="og:image" content="https://agentdub.ai/assets/og/home.png" />
+
+  <!-- Twitter/X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AgentDub Sentinel — Strategic AI Intelligence Agent" />
+  <meta name="twitter:description" content="Signal, not noise. Continuous intelligence on Dubai & GCC AI transformation." />
+  <meta name="twitter:image" content="https://agentdub.ai/assets/og/home.png" />
+
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background:#0b0f19;
+      color:#e8ecf3;
+      line-height:1.55;
+    }
+    a{ color:inherit; text-decoration:none; }
+    a:hover{ opacity:.9; }
+
+    .wrap{ max-width:1100px; margin:0 auto; padding:28px 18px 70px; }
+
+    /* Header + Nav */
+    header{
+      position: sticky;
+      top: 0;
+      background: rgba(11,15,25,.82);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,.08);
+      z-index: 10;
+    }
+    .bar{
+      max-width:1100px;
+      margin:0 auto;
+      padding:14px 18px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px;
+      font-weight:700; letter-spacing:.2px;
+    }
+    .dot{
+      width:10px; height:10px; border-radius:50%;
+      background: radial-gradient(circle at 30% 30%, #a6ffcb, #2dd4bf, #0ea5e9);
+      box-shadow: 0 0 18px rgba(45,212,191,.35);
+    }
+    nav{
+      display:flex; flex-wrap:wrap;
+      gap:10px;
+      align-items:center;
+      justify-content:center;
+    }
+    nav a{
+      padding:9px 12px;
+      border:1px solid rgba(255,255,255,.10);
+      border-radius:999px;
+      font-size:14px;
+      background: rgba(255,255,255,.03);
+    }
+    nav a.active{
+      border-color: rgba(45,212,191,.55);
+      box-shadow: 0 0 0 4px rgba(45,212,191,.10);
+    }
+
+    /* Hero */
+    .hero{
+      margin-top:18px;
+      padding:26px 22px;
+      border:1px solid rgba(255,255,255,.10);
+      border-radius:22px;
+      background:
+        radial-gradient(800px 280px at 10% 0%, rgba(14,165,233,.22), transparent 60%),
+        radial-gradient(800px 280px at 90% 0%, rgba(45,212,191,.18), transparent 60%),
+        rgba(255,255,255,.03);
+      box-shadow: 0 18px 55px rgba(0,0,0,.35);
+    }
+    .kicker{
+      display:inline-flex; gap:8px; align-items:center;
+      font-size:13px;
+      color: rgba(232,236,243,.80);
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.03);
+      padding:6px 10px;
+      border-radius:999px;
+    }
+    h1{ margin:14px 0 10px; font-size:34px; line-height:1.15; }
+    .lead{ margin:0; max-width:72ch; color: rgba(232,236,243,.86); font-size:16px; }
+    .ctaRow{ display:flex; flex-wrap:wrap; gap:10px; margin-top:16px; }
+    .btn{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:10px 14px;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.04);
+      font-weight:600;
+      font-size:14px;
+    }
+    .btn.primary{
+      border-color: rgba(45,212,191,.55);
+      background: rgba(45,212,191,.10);
+    }
+
+    /* Sections */
+    .grid{
+      display:grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap:14px;
+      margin-top:14px;
+    }
+    @media (max-width: 900px){
+      .grid{ grid-template-columns: 1fr; }
+      h1{ font-size:30px; }
+    }
+    .card{
+      padding:18px 18px;
+      border:1px solid rgba(255,255,255,.10);
+      border-radius:18px;
+      background: rgba(255,255,255,.03);
+    }
+    .card h2{ margin:0 0 10px; font-size:18px; }
+    .card p{ margin:0 0 10px; color: rgba(232,236,243,.86); }
+    .list{ margin:10px 0 0; padding-left:18px; color: rgba(232,236,243,.86); }
+    .list li{ margin:6px 0; }
+
+    /* Share */
+    .share{
+      display:flex; flex-wrap:wrap; gap:10px;
+      margin-top:14px;
+      padding-top:14px;
+      border-top:1px solid rgba(255,255,255,.08);
+    }
+    .share a{
+      padding:9px 12px;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.03);
+      font-size:14px;
+    }
+
+    footer{
+      margin-top:22px;
+      padding-top:14px;
+      border-top:1px solid rgba(255,255,255,.08);
+      color: rgba(232,236,243,.65);
+      font-size:13px;
+    }
+    .muted{ color: rgba(232,236,243,.72); }
+    code.inline{
+      padding:2px 6px; border-radius:8px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.04);
+      font-size:.95em;
+    }
+  </style>
+</head>
+
+<body>
+<header>
+  <div class="bar">
+    <a class="brand" href="/index.html" aria-label="AgentDub.ai Home">
+      <span class="dot"></span>
+      <span>AgentDub.ai</span>
+    </a>
+
+    <nav aria-label="Primary">
+      <a href="/index.html">Home</a>
+      <a class="active" href="/sentinel.html">Sentinel</a>
+      <a href="/intelligence.html">Intelligence</a>
+      <a href="/investors.html">Investors</a>
+      <a href="/articles.html">Articles</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <span class="kicker">🧠 Agent layer • Dubai / UAE / GCC</span>
+    <h1>AgentDub Sentinel</h1>
+    <p class="lead">
+      Sentinel is a strategic AI intelligence agent designed to monitor and interpret Dubai’s accelerating AI-driven transformation.
+      It focuses on <span class="muted">infrastructure, regulation, capital, and enterprise adoption</span> — turning constant noise into decision-grade signal.
+    </p>
+
+    <div class="ctaRow">
+      <a class="btn primary" href="/intelligence.html">View latest Signals →</a>
+      <a class="btn" href="/investors.html">Why it matters to investors →</a>
+    </div>
+
+    <div class="share" aria-label="Share Sentinel page">
+      <a id="shareLinkedIn" href="#" target="_blank" rel="noopener">Share on LinkedIn</a>
+      <a id="shareX" href="#" target="_blank" rel="noopener">Share on X</a>
+      <a id="shareFacebook" href="#" target="_blank" rel="noopener">Share on Facebook</a>
+    </div>
+  </section>
+
+  <section class="grid">
+    <div class="card">
+      <h2>What Sentinel monitors</h2>
+      <p>Sentinel continuously tracks high-leverage signals across Dubai and the UAE, with GCC context when it affects positioning.</p>
+      <ul class="list">
+        <li><b>AI deployment</b> across government and enterprise</li>
+        <li><b>Compute & infrastructure</b> (cloud, data centers, telecom, sovereign stacks)</li>
+        <li><b>Policy & governance</b> (regulation, standards, public-sector mandates)</li>
+        <li><b>Capital flows</b> (funding, sovereign initiatives, strategic partnerships)</li>
+        <li><b>Execution reality</b> (what ships, scales, and becomes structural)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>How Sentinel outputs intelligence</h2>
+      <p>Each publication follows a consistent, investor-readable format:</p>
+      <ul class="list">
+        <li><b>One clear signal</b> (not a news dump)</li>
+        <li><b>Impact score</b> from 0–10</li>
+        <li><b>Time horizon</b> (immediate / 1–3y / 3–7y)</li>
+        <li><b>Second-order effects</b> (who benefits, who is pressured)</li>
+        <li><b>Outlook</b> (measured, no hype)</li>
+      </ul>
+      <p class="muted" style="margin-top:10px;">
+        Tip: keep outputs numbered like <code class="inline">Signal #001</code>, <code class="inline">#002</code> to build authority fast.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Who Sentinel is for</h2>
+      <ul class="list">
+        <li>Investors tracking structural AI shifts</li>
+        <li>Executives navigating transformation decisions</li>
+        <li>Institutions seeking long-term visibility</li>
+        <li>Builders who need signal to prioritize</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Positioning</h2>
+      <p>
+        AgentDub.ai is built as a <b>strategic intelligence asset</b> — not mass media.
+        Sentinel exists to create a persistent, compounding advantage: continuous analysis on one of the world’s most aggressive AI economies.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    © <span id="year"></span> AgentDub.ai • Sentinel is a strategic intelligence layer. Signal, not noise.
+  </footer>
+</main>
+
+<script>
+  // Footer year
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  // Social share links (auto uses current page URL)
+  const pageUrl = encodeURIComponent(window.location.href);
+  const shareText = encodeURIComponent("AgentDub Sentinel — strategic AI intelligence on Dubai & GCC transformation.");
+
+  document.getElementById("shareLinkedIn").href =
+    "https://www.linkedin.com/sharing/share-offsite/?url=" + pageUrl;
+
+  document.getElementById("shareX").href =
+    "https://twitter.com/intent/tweet?url=" + pageUrl + "&text=" + shareText;
+
+  document.getElementById("shareFacebook").href =
+    "https://www.facebook.com/sharer/sharer.php?u=" + pageUrl;
+</script>
+</body>
+</html>
