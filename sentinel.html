@@ -22,6 +22,7 @@
   <style>
     :root { color-scheme: dark; }
     * { box-sizing: border-box; }
+
     body{
       margin:0;
       font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
@@ -52,17 +53,25 @@
       justify-content:space-between;
       gap:12px;
     }
+
+    /* LOGO (CEO AVATAR) */
     .brand{
-      display:flex; align-items:center; gap:10px;
-      font-weight:700; letter-spacing:.2px;
+      display:flex;
+      align-items:center;
     }
-    .dot{
-      width:10px; height:10px; border-radius:50%;
-      background: radial-gradient(circle at 30% 30%, #a6ffcb, #2dd4bf, #0ea5e9);
-      box-shadow: 0 0 18px rgba(45,212,191,.35);
+    .brand img{
+      width:36px;
+      height:36px;
+      border-radius:999px;
+      object-fit:cover;
+      display:block;
+      border:1px solid rgba(255,255,255,.25);
+      max-width:none;
     }
+
     nav{
-      display:flex; flex-wrap:wrap;
+      display:flex;
+      flex-wrap:wrap;
       gap:10px;
       align-items:center;
       justify-content:center;
@@ -162,32 +171,24 @@
       font-size:13px;
     }
     .muted{ color: rgba(232,236,243,.72); }
-    code.inline{
-      padding:2px 6px; border-radius:8px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.04);
-      font-size:.95em;
-    }
   </style>
 </head>
 
 <body>
 <header>
   <div class="bar">
-    <a class="brand" href="/index.html" aria-label="AgentDub.ai Home">
-      <span class="dot"></span>
-      <span>AgentDub.ai</span>
+    <!-- LOGO -->
+    <a class="brand" href="/" aria-label="AgentDub.ai Home">
+      <img src="/assets/og/ceo-avatar-v2.png" alt="AgentDub.ai">
     </a>
 
-   <nav class="nav">
-  <div class="nav-inner">
-    <a href="/">Home</a>
-    <a href="/sentinel.html">Sentinel</a>
-    <a href="/intelligence.html">Intelligence</a>
-    <a href="/investors/">Investors</a>
-  </div>
-</nav>
-
+    <!-- NAV -->
+    <nav>
+      <a href="/">Home</a>
+      <a href="/sentinel.html" class="active">Sentinel</a>
+      <a href="/intelligence.html">Intelligence</a>
+      <a href="/investors/">Investors</a>
+    </nav>
   </div>
 </header>
 
@@ -218,40 +219,39 @@
       <p>Sentinel continuously tracks high-leverage signals across Dubai and the UAE, with GCC context when it affects positioning.</p>
       <ul class="list">
         <li><b>AI deployment</b> across government and enterprise</li>
-        <li><b>Compute & infrastructure</b> (cloud, data centers, telecom, sovereign stacks)</li>
-        <li><b>Policy & governance</b> (regulation, standards, public-sector mandates)</li>
-        <li><b>Capital flows</b> (funding, sovereign initiatives, strategic partnerships)</li>
-        <li><b>Execution reality</b> (what ships, scales, and becomes structural)</li>
+        <li><b>Compute & infrastructure</b></li>
+        <li><b>Policy & governance</b></li>
+        <li><b>Capital flows</b></li>
+        <li><b>Execution reality</b></li>
       </ul>
     </div>
 
     <div class="card">
       <h2>How Sentinel outputs intelligence</h2>
-      <p>Each publication follows a consistent, investor-readable format:</p>
       <ul class="list">
-        <li><b>One clear signal</b> (not a news dump)</li>
-        <li><b>Impact score</b> from 0–10</li>
-        <li><b>Time horizon</b> (immediate / 1–3y / 3–7y)</li>
-        <li><b>Second-order effects</b> (who benefits, who is pressured)</li>
-        <li><b>Outlook</b> (measured, no hype)</li>
+        <li>One clear signal</li>
+        <li>Impact score (0–10)</li>
+        <li>Time horizon</li>
+        <li>Second-order effects</li>
+        <li>Measured outlook</li>
       </ul>
     </div>
 
     <div class="card">
       <h2>Who Sentinel is for</h2>
       <ul class="list">
-        <li>Investors tracking structural AI shifts</li>
-        <li>Executives navigating transformation decisions</li>
-        <li>Institutions seeking long-term visibility</li>
-        <li>Builders who need signal to prioritize</li>
+        <li>Investors</li>
+        <li>Executives</li>
+        <li>Institutions</li>
+        <li>Builders</li>
       </ul>
     </div>
 
     <div class="card">
       <h2>Positioning</h2>
       <p>
-        AgentDub.ai is built as a <b>strategic intelligence asset</b> — not mass media.
-        Sentinel exists to create a persistent, compounding advantage: continuous analysis on one of the world’s most aggressive AI economies.
+        AgentDub.ai is built as a <b>strategic intelligence asset</b>, not mass media.
+        Sentinel creates a compounding advantage: continuous analysis on one of the world’s most aggressive AI economies.
       </p>
     </div>
   </section>
@@ -262,10 +262,8 @@
 </main>
 
 <script>
-  // Footer year
   document.getElementById("year").textContent = new Date().getFullYear();
 
-  // Social share links (auto uses current page URL)
   const pageUrl = encodeURIComponent(window.location.href);
   const shareText = encodeURIComponent("AgentDub Sentinel — strategic AI intelligence on Dubai & GCC transformation.");
 
