@@ -40,18 +40,27 @@
       box-shadow: 0 10px 30px rgba(0,0,0,.25);
     }
 
-    .logo {
+    /* CEO AVATAR AS NAV LOGO */
+    .logo{
       display:flex;
       align-items:center;
       margin-right:6px;
+      padding:4px;
+      border-radius:999px;
     }
 
-    .logo img {
+    .logo:hover{
+      background: rgba(255,255,255,.10);
+    }
+
+    .logo img{
       width:36px;
       height:36px;
-      border-radius:50%;
+      border-radius:999px;
       object-fit:cover;
       display:block;
+      max-width:none;
+      border:1px solid rgba(255,255,255,.25);
     }
 
     .nav-inner a{
@@ -94,8 +103,8 @@
 
     <nav class="nav">
       <div class="nav-inner">
-        <a href="/" class="logo">
-          <img src="/assets/ceo-avatar.png" alt="AgentDub.ai logo">
+        <a href="/" class="logo" aria-label="AgentDub.ai Home">
+          <img src="/assets/og/ceo-avatar-v2.png" alt="AgentDub.ai">
         </a>
         <a href="/">Home</a>
         <a href="/sentinel.html">Sentinel</a>
@@ -184,4 +193,5 @@
   </script>
 </body>
 </html>
+
 
