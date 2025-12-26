@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>AgentDub.ai — AI Agents & Digital Transformation</title>
+
   <!-- SEO -->
   <meta name="description" content="Independent intelligence on AI agents, autonomous systems, and applied digital transformation across Dubai and the Gulf.">
 
@@ -56,24 +57,19 @@
       box-shadow: 0 10px 30px rgba(0,0,0,.25);
     }
 
-    /* ✅ NAV LOGO (uses /logo.png) */
     .nav-logo {
       display: flex;
       align-items: center;
       margin-right: 6px;
-      padding: 4px 6px;
-      border-radius: 999px;
-    }
-
-    .nav-logo:hover {
-      background: rgba(255,255,255,.10);
     }
 
     .nav-logo img {
-      height: 34px;            /* adjust if you want bigger: 30–34px */
-      width: auto;
+      width: 36px;
+      height: 36px;
+      border-radius: 999px;
+      object-fit: cover;
       display: block;
-      object-fit: contain;
+      border: 1px solid rgba(255,255,255,.25);
     }
 
     .nav-inner a {
@@ -115,12 +111,11 @@
     }
 
     .ceo-avatar img{
-      display:block !important;
-      width:100% !important;
-      height:100% !important;
-      object-fit: cover !important;
-      object-position: 50% 25% !important;
-      max-width: none !important;
+      display:block;
+      width:100%;
+      height:100%;
+      object-fit: cover;
+      object-position: 50% 25%;
     }
 
     .ceo-text { line-height: 1.2; }
@@ -182,11 +177,11 @@
 <body>
   <main class="wrap">
 
-    <!-- NAV WITH REAL LOGO -->
+    <!-- NAV WITH LOGO -->
     <nav class="nav">
       <div class="nav-inner">
-        <a href="/" class="nav-logo" aria-label="AgentDub.ai Home">
-          <img src="/logo.png" alt="AgentDub.ai logo">
+        <a href="/" class="nav-logo">
+          <img src="/assets/og/ceo-avatar-v2.png" alt="AgentDub.ai logo">
         </a>
         <a href="/">Home</a>
         <a href="/sentinel.html">Sentinel</a>
@@ -234,20 +229,21 @@
 
     <!-- FOOTER -->
     <div class="footer">
-
       <div class="footer-social">
+        <!-- icons unchanged -->
+        <!-- LinkedIn -->
         <a href="https://www.linkedin.com/groups/16471003" target="_blank" aria-label="LinkedIn">
           <svg viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8H4.5V23H.5V8zM8 8H11.8V10.1H11.85C12.38 9.1 13.68 8 15.62 8 19.68 8 20.5 10.6 20.5 13.98V23H16.5V14.9C16.5 12.97 16.46 10.5 14 10.5 11.5 10.5 11.1 12.45 11.1 14.77V23H7.1V8H8z"/></svg>
         </a>
-
+        <!-- X -->
         <a href="https://x.com/agentdub_ai" target="_blank" aria-label="X">
           <svg viewBox="0 0 24 24"><path d="M18.9 2H22l-6.8 7.8L23 22h-6.7l-5.2-6.7L5.2 22H2l7.3-8.4L1 2h6.9l4.7 6.1L18.9 2zm-1.2 18h1.7L6.2 3.9H4.4L17.7 20z"/></svg>
         </a>
-
+        <!-- Instagram -->
         <a href="https://www.instagram.com/agentdub_ai/" target="_blank" aria-label="Instagram">
           <svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3z"/></svg>
         </a>
-
+        <!-- Facebook -->
         <a href="https://www.facebook.com/profile.php?id=61585442680700" target="_blank" aria-label="Facebook">
           <svg viewBox="0 0 24 24"><path d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.6 1.7-1.6h1.6V4.8c-.3 0-1.4-.1-2.7-.1-2.7 0-4.5 1.6-4.5 4.6V11H7v3h2.7v8h3.8z"/></svg>
         </a>
@@ -263,6 +259,7 @@
   </script>
 </body>
 </html>
+
 
 
 
