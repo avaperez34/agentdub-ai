@@ -4,22 +4,27 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Signal #001 — Agentic AI Deployed at Scale in Abu Dhabi Logistics</title>
-  <meta name="description" content="Sentinel Signal #001: Agentic AI deployed at scale across Abu Dhabi logistics infrastructure." />
+  <meta name="description" content="AgentDub Sentinel Signal #001 — AD Ports Group deploys agentic AI at scale across logistics operations in Abu Dhabi, marking a shift to operational autonomy." />
 
-  <meta property="og:title" content="Signal #001 — Agentic AI Deployed at Scale in Abu Dhabi Logistics" />
-  <meta property="og:description" content="AI agents move from pilots to production inside UAE national logistics infrastructure." />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Signal #001 — Agentic AI Deployed at Scale in Abu Dhabi" />
+  <meta property="og:description" content="AD Ports Group deploys large-scale AI agents in logistics operations, signalling operational maturity of agentic AI in the UAE." />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://agentdub.ai/signals/001.html" />
   <meta property="og:image" content="https://agentdub.ai/assets/og/home.png" />
 
+  <!-- Twitter/X -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Signal #001 — Agentic AI Deployed at Scale in Abu Dhabi Logistics" />
-  <meta name="twitter:description" content="Execution-layer AI enters national logistics infrastructure in the UAE." />
+  <meta name="twitter:title" content="Signal #001 — Agentic AI Deployed at Scale in Abu Dhabi" />
+  <meta name="twitter:description" content="Production-grade AI agents deployed inside UAE logistics infrastructure." />
   <meta name="twitter:image" content="https://agentdub.ai/assets/og/home.png" />
+
+  <link rel="canonical" href="https://agentdub.ai/signals/001.html" />
 
   <style>
     :root { color-scheme: dark; }
     * { box-sizing: border-box; }
+
     body{
       margin:0;
       font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
@@ -52,17 +57,23 @@
       align-items:center;
       gap:10px;
       font-weight:700;
+      letter-spacing:.2px;
     }
     .brand img{
       width:36px;
       height:36px;
       border-radius:999px;
       object-fit:cover;
+      display:block;
       border:1px solid rgba(255,255,255,.25);
+      max-width:none;
     }
     nav{
       display:flex;
+      flex-wrap:wrap;
       gap:10px;
+      align-items:center;
+      justify-content:center;
     }
     nav a{
       padding:9px 12px;
@@ -78,23 +89,45 @@
       padding:18px;
       border:1px solid rgba(255,255,255,.10);
       border-radius:20px;
-      background: rgba(255,255,255,.03);
+      background:
+        radial-gradient(800px 280px at 20% 0%, rgba(45,212,191,.18), transparent 60%),
+        radial-gradient(800px 280px at 80% 0%, rgba(14,165,233,.18), transparent 60%),
+        rgba(255,255,255,.03);
       box-shadow: 0 18px 55px rgba(0,0,0,.35);
     }
-    h1{ margin:0 0 10px; font-size:28px; }
-    .lead{ color: rgba(232,236,243,.86); }
+
+    h1{ margin:0 0 10px; font-size:28px; line-height:1.2; }
+    .lead{ margin:0; color: rgba(232,236,243,.86); max-width:80ch; }
 
     .meta{
       display:flex; flex-wrap:wrap; gap:8px;
-      margin-top:12px;
-      font-size:13px;
+      margin:12px 0 0;
       color: rgba(232,236,243,.78);
+      font-size:13px;
     }
     .tag{
       padding:5px 10px;
       border-radius:999px;
       border:1px solid rgba(255,255,255,.10);
       background: rgba(255,255,255,.03);
+    }
+
+    .row{
+      display:flex; gap:10px; flex-wrap:wrap;
+      margin-top:14px;
+    }
+    .btn{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:9px 12px;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.04);
+      font-weight:600;
+      font-size:13px;
+    }
+    .btn.primary{
+      border-color: rgba(45,212,191,.55);
+      background: rgba(45,212,191,.10);
     }
 
     .card{
@@ -104,14 +137,38 @@
       border-radius:18px;
       background: rgba(255,255,255,.03);
     }
-    .list{ padding-left:18px; }
+    .card h2{ margin:0 0 10px; font-size:18px; }
+    .card p{ margin:0 0 10px; color: rgba(232,236,243,.86); }
+
+    ul.list{
+      margin:10px 0 0;
+      padding-left:18px;
+      color: rgba(232,236,243,.86);
+    }
+    ul.list li{ margin:6px 0; }
+
+    .share{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:14px;
+      padding-top:14px;
+      border-top:1px solid rgba(255,255,255,.08);
+    }
+    .share a{
+      padding:9px 12px;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.03);
+      font-size:14px;
+    }
 
     footer{
       margin-top:22px;
       padding-top:14px;
       border-top:1px solid rgba(255,255,255,.08);
-      font-size:13px;
       color: rgba(232,236,243,.65);
+      font-size:13px;
     }
   </style>
 </head>
@@ -119,10 +176,11 @@
 <body>
 <header>
   <div class="bar">
-    <a class="brand" href="/">
+    <a class="brand" href="/" aria-label="AgentDub.ai Home">
       <img src="/assets/og/ceo-avatar-v2.png" alt="AgentDub.ai">
       <span>AgentDub.ai</span>
     </a>
+
     <nav>
       <a href="/">Home</a>
       <a href="/sentinel.html">Sentinel</a>
@@ -133,45 +191,94 @@
 </header>
 
 <main class="wrap">
+
+  <!-- TOP -->
   <section class="top">
     <h1>Signal #001 — Agentic AI Deployed at Scale in Abu Dhabi Logistics</h1>
     <p class="lead">
-      Autonomous AI agents have been deployed across core logistics operations in Abu Dhabi,
-      marking a shift from experimentation to production-grade execution.
+      AD Ports Group has deployed large-scale agentic AI systems across its logistics operations and was officially
+      recognised by <b>Guinness World Records</b> for operating the highest number of AI agents within a single
+      logistics facility.
     </p>
 
     <div class="meta">
-      <span class="tag">UAE</span>
-      <span class="tag">Infrastructure</span>
-      <span class="tag">Impact: 8.2/10</span>
-      <span class="tag">Horizon: 3–7y</span>
+      <span class="tag">Sector: Logistics / Infrastructure AI</span>
+      <span class="tag">Scope: Abu Dhabi, UAE</span>
+      <span class="tag">Impact: 8.5 / 10</span>
+      <span class="tag">Horizon: Immediate → 1–3y</span>
+    </div>
+
+    <div class="row">
+      <a class="btn primary" href="/intelligence.html">← Back to Intelligence</a>
+      <a class="btn" href="/sentinel.html">About Sentinel</a>
     </div>
   </section>
 
   <section class="card">
-    <h2>What happened</h2>
+    <h2>Strategic analysis</h2>
     <p>
-      AD Ports Group implemented autonomous AI agents across logistics workflows,
-      coordinating planning, routing, and operational decision-making.
+      This deployment demonstrates a shift from AI experimentation to operational autonomy.
+      Hundreds of AI agents now coordinate, optimise, and execute logistics workflows in real time.
     </p>
   </section>
 
   <section class="card">
-    <h2>Why this matters</h2>
+    <h2>Second-order effects</h2>
     <ul class="list">
-      <li>AI agents are now embedded inside national infrastructure</li>
-      <li>Execution-layer AI becomes a long-term structural asset</li>
-      <li>UAE demonstrates readiness to operationalise AI at scale</li>
+      <li>Enterprise AI in the UAE moves from pilot to baseline capability</li>
+      <li>Investors gain evidence of real operational AI at scale</li>
+      <li>Regulatory frameworks will increasingly need to address agent autonomy</li>
     </ul>
   </section>
 
+  <section class="card">
+    <h2>Outlook</h2>
+    <p>
+      Within 12–36 months, similar agent-based systems are likely to expand into transport,
+      utilities, and public services across the UAE and GCC.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Source</h2>
+    <ul class="list">
+      <li>
+        <a href="https://www.adportsgroup.com/en/news-and-media" target="_blank" rel="noopener">
+          AD Ports Group — Official press release (Guinness World Records AI agents deployment)
+        </a>
+      </li>
+    </ul>
+
+    <!-- SHARE -->
+    <div class="share" aria-label="Share Signal #001">
+      <a id="shareLinkedIn" href="#" target="_blank" rel="noopener">Share on LinkedIn</a>
+      <a id="shareX" href="#" target="_blank" rel="noopener">Share on X</a>
+      <a id="shareFacebook" href="#" target="_blank" rel="noopener">Share on Facebook</a>
+    </div>
+  </section>
+
   <footer>
-    © <span id="year"></span> AgentDub.ai
+    © <span id="year"></span> AgentDub.ai — Sentinel Signal #001
   </footer>
+
 </main>
 
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
+
+  const pageUrl = encodeURIComponent(window.location.href);
+  const shareText = encodeURIComponent(
+    "Sentinel Signal #001 — Agentic AI deployed at scale in Abu Dhabi logistics (AgentDub.ai)"
+  );
+
+  document.getElementById("shareLinkedIn").href =
+    "https://www.linkedin.com/sharing/share-offsite/?url=" + pageUrl;
+
+  document.getElementById("shareX").href =
+    "https://twitter.com/intent/tweet?url=" + pageUrl + "&text=" + shareText;
+
+  document.getElementById("shareFacebook").href =
+    "https://www.facebook.com/sharer/sharer.php?u=" + pageUrl;
 </script>
 </body>
 </html>
