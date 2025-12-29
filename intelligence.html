@@ -22,7 +22,6 @@
   <style>
     :root { color-scheme: dark; }
     * { box-sizing: border-box; }
-
     body{
       margin:0;
       font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
@@ -41,7 +40,6 @@
       border-bottom: 1px solid rgba(255,255,255,.08);
       z-index: 10;
     }
-
     .bar{
       max-width:1100px;
       margin:0 auto;
@@ -51,8 +49,6 @@
       justify-content:space-between;
       gap:12px;
     }
-
-    /* BRAND LOGO (CEO AVATAR) */
     .brand{
       display:flex;
       align-items:center;
@@ -69,14 +65,9 @@
       border:1px solid rgba(255,255,255,.25);
       max-width:none;
     }
-    .brand span{
-      font-weight:700;
-      letter-spacing:.2px;
-    }
 
     nav{
-      display:flex;
-      flex-wrap:wrap;
+      display:flex; flex-wrap:wrap;
       gap:10px;
       align-items:center;
       justify-content:center;
@@ -188,7 +179,6 @@
       border-color: rgba(45,212,191,.55);
       background: rgba(45,212,191,.10);
     }
-
     footer{
       margin-top:22px;
       padding-top:14px;
@@ -202,13 +192,11 @@
 <body>
 <header>
   <div class="bar">
-    <!-- LOGO BRAND -->
     <a class="brand" href="/" aria-label="AgentDub.ai Home">
       <img src="/assets/og/ceo-avatar-v2.png" alt="AgentDub.ai" />
       <span>AgentDub.ai</span>
     </a>
 
-    <!-- NAV -->
     <nav>
       <a href="/">Home</a>
       <a href="/sentinel.html">Sentinel</a>
@@ -223,6 +211,7 @@
     <h1>Intelligence</h1>
     <p class="lead">
       The live feed of <b>AgentDub Sentinel Signals</b> — structured, repeatable analysis designed for decision-makers.
+      Publish each new Signal as its own page and link it here.
     </p>
 
     <div class="actions">
@@ -252,13 +241,11 @@
         <span class="tag">Impact: 8.2/10</span>
         <span class="tag">Horizon: 3–7y</span>
       </div>
-
       <h2>Signal #001 — Agentic AI Deployed at Scale in Abu Dhabi Logistics</h2>
       <p>
         AD Ports Group has deployed large-scale autonomous AI agents across its logistics operations in Abu Dhabi,
         marking a transition from AI pilots to production-level execution inside core national infrastructure.
       </p>
-
       <div class="row">
         <a class="btn primary" href="/signals/001.html">Read Signal →</a>
         <a class="btn" href="/sentinel.html">About Sentinel</a>
@@ -273,15 +260,32 @@
         <span class="tag">Impact: 7.4/10</span>
         <span class="tag">Horizon: 1–3y</span>
       </div>
-
       <h2>Signal #002 — AI Service Agents Embedded in Dubai Utility Operations</h2>
       <p>
         Dubai Electricity and Water Authority (DEWA) has embedded AI-driven service agents into live customer and internal
         utility workflows, demonstrating production-grade agent deployment inside a regulated public infrastructure environment.
       </p>
-
       <div class="row">
         <a class="btn primary" href="/signals/002.html">Read Signal →</a>
+        <a class="btn" href="/sentinel.html">About Sentinel</a>
+      </div>
+    </article>
+
+    <!-- CARD 003 -->
+    <article class="card">
+      <div class="meta">
+        <span class="tag">Signal #003</span>
+        <span class="tag">Country: Saudi Arabia</span>
+        <span class="tag">Impact: 8.0/10</span>
+        <span class="tag">Horizon: 3–7y</span>
+      </div>
+      <h2>Signal #003 — Agentic AI Embedded into Saudi Government Service Delivery</h2>
+      <p>
+        Saudi Arabia is integrating AI-driven automation into government service delivery, moving beyond pilots toward
+        execution-layer workflows with institutional governance.
+      </p>
+      <div class="row">
+        <a class="btn primary" href="/signals/003.html">Read Signal →</a>
         <a class="btn" href="/sentinel.html">About Sentinel</a>
       </div>
     </article>
@@ -310,6 +314,3 @@
 </script>
 </body>
 </html>
-
-   
-
