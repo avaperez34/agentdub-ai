@@ -4,23 +4,25 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Signal #002 — AI Service Agents Embedded in Dubai Utility Operations</title>
-  <meta name="description" content="Sentinel Signal #002: AI service agents embedded into Dubai utility operations." />
+  <meta name="description" content="Sentinel Signal #002: DEWA deploys AI-driven service agents across customer engagement and internal utility workflows in Dubai." />
 
+  <!-- Open Graph -->
   <meta property="og:title" content="Signal #002 — AI Service Agents Embedded in Dubai Utility Operations" />
-  <meta property="og:description" content="Production-grade AI agents enter regulated public infrastructure in Dubai." />
+  <meta property="og:description" content="DEWA embeds AI-driven service agents into operational utility workflows via its Rammas platform." />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://agentdub.ai/signals/002.html" />
   <meta property="og:image" content="https://agentdub.ai/assets/og/home.png" />
 
+  <!-- Twitter/X -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Signal #002 — AI Service Agents Embedded in Dubai Utility Operations" />
-  <meta name="twitter:description" content="Regulated public utilities adopt execution-layer AI agents." />
+  <meta name="twitter:description" content="Agent-based service execution enters regulated public utilities in Dubai." />
   <meta name="twitter:image" content="https://agentdub.ai/assets/og/home.png" />
 
   <style>
-    /* SAME CSS AS SIGNAL #001 — KEEP IDENTICAL */
     :root { color-scheme: dark; }
     * { box-sizing: border-box; }
+
     body{
       margin:0;
       font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
@@ -29,42 +31,138 @@
       line-height:1.55;
     }
     a{ color:inherit; text-decoration:none; }
+    a:hover{ opacity:.9; }
+
     header{
       position: sticky;
       top: 0;
       background: rgba(11,15,25,.82);
       backdrop-filter: blur(10px);
       border-bottom: 1px solid rgba(255,255,255,.08);
+      z-index: 10;
     }
     .bar{
       max-width:1100px;
       margin:0 auto;
       padding:14px 18px;
       display:flex;
+      align-items:center;
       justify-content:space-between;
+      gap:12px;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      font-weight:700;
+      letter-spacing:.2px;
     }
     .brand img{
       width:36px;
       height:36px;
       border-radius:999px;
+      object-fit:cover;
+      display:block;
+      border:1px solid rgba(255,255,255,.25);
+      max-width:none;
+    }
+    nav{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      align-items:center;
+      justify-content:center;
     }
     nav a{
       padding:9px 12px;
       border:1px solid rgba(255,255,255,.10);
       border-radius:999px;
+      font-size:14px;
       background: rgba(255,255,255,.03);
     }
-    .wrap{ max-width:860px; margin:0 auto; padding:26px 18px; }
-    .card{ padding:18px; border:1px solid rgba(255,255,255,.10); border-radius:18px; background: rgba(255,255,255,.03); margin-top:14px; }
+
+    .wrap{ max-width:860px; margin:0 auto; padding:26px 18px 70px; }
+
+    .top{
+      padding:18px;
+      border:1px solid rgba(255,255,255,.10);
+      border-radius:20px;
+      background:
+        radial-gradient(800px 280px at 20% 0%, rgba(45,212,191,.18), transparent 60%),
+        radial-gradient(800px 280px at 80% 0%, rgba(14,165,233,.18), transparent 60%),
+        rgba(255,255,255,.03);
+      box-shadow: 0 18px 55px rgba(0,0,0,.35);
+    }
+
+    h1{ margin:0 0 10px; font-size:28px; line-height:1.2; }
+    .lead{ margin:0; color: rgba(232,236,243,.86); max-width:80ch; }
+
+    .meta{
+      display:flex; flex-wrap:wrap; gap:8px;
+      margin:12px 0 0;
+      color: rgba(232,236,243,.78);
+      font-size:13px;
+    }
+    .tag{
+      padding:5px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.03);
+    }
+
+    .row{
+      display:flex; gap:10px; flex-wrap:wrap;
+      margin-top:14px;
+    }
+    .btn{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:9px 12px;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.04);
+      font-weight:600;
+      font-size:13px;
+    }
+    .btn.primary{
+      border-color: rgba(45,212,191,.55);
+      background: rgba(45,212,191,.10);
+    }
+
+    .card{
+      margin-top:14px;
+      padding:18px;
+      border:1px solid rgba(255,255,255,.10);
+      border-radius:18px;
+      background: rgba(255,255,255,.03);
+    }
+    .card h2{ margin:0 0 10px; font-size:18px; }
+    .card p{ margin:0 0 10px; color: rgba(232,236,243,.86); }
+
+    ul.list{
+      margin:10px 0 0;
+      padding-left:18px;
+      color: rgba(232,236,243,.86);
+    }
+    ul.list li{ margin:6px 0; }
+
+    footer{
+      margin-top:22px;
+      padding-top:14px;
+      border-top:1px solid rgba(255,255,255,.08);
+      color: rgba(232,236,243,.65);
+      font-size:13px;
+    }
   </style>
 </head>
 
 <body>
 <header>
   <div class="bar">
-    <a class="brand" href="/">
+    <a class="brand" href="/" aria-label="AgentDub.ai Home">
       <img src="/assets/og/ceo-avatar-v2.png" alt="AgentDub.ai">
+      <span>AgentDub.ai</span>
     </a>
+
     <nav>
       <a href="/">Home</a>
       <a href="/sentinel.html">Sentinel</a>
@@ -75,26 +173,74 @@
 </header>
 
 <main class="wrap">
-  <section class="card">
+
+  <!-- TOP / SUMMARY -->
+  <section class="top">
     <h1>Signal #002 — AI Service Agents Embedded in Dubai Utility Operations</h1>
+    <p class="lead">
+      Dubai Electricity and Water Authority (DEWA) has deployed AI-driven service agents across
+      customer engagement and internal workflows via its <b>Rammas</b> platform, embedding AI
+      directly into operational service execution.
+    </p>
+
+    <div class="meta">
+      <span class="tag">Sector: Utilities / Public Services</span>
+      <span class="tag">Scope: Dubai, UAE</span>
+      <span class="tag">Impact: 7.9 / 10</span>
+      <span class="tag">Horizon: Immediate → 1–3y</span>
+    </div>
+
+    <div class="row">
+      <a class="btn primary" href="/intelligence.html">← Back to Intelligence</a>
+      <a class="btn" href="/sentinel.html">About Sentinel</a>
+    </div>
+  </section>
+
+  <!-- STRATEGIC ANALYSIS -->
+  <section class="card">
+    <h2>Strategic analysis</h2>
     <p>
-      Dubai Electricity and Water Authority (DEWA) embedded AI-driven service agents
-      into live customer and internal utility workflows.
+      These agents go beyond informational chat, interfacing with live service processes such as
+      billing, service activation, and fault reporting.
+    </p>
+    <p>
+      Deployment inside a regulated utility implies a high degree of maturity in governance,
+      reliability, and auditability — conditions rarely met in early-stage AI deployments.
     </p>
   </section>
 
+  <!-- SECOND-ORDER EFFECTS -->
   <section class="card">
-    <h2>Why this matters</h2>
-    <ul>
-      <li>Regulated environments adopt agentic AI</li>
-      <li>Institutional trust replaces experimentation</li>
-      <li>Blueprint for other public services</li>
+    <h2>Second-order effects</h2>
+    <ul class="list">
+      <li>Establishes a public-sector benchmark for AI agent deployment</li>
+      <li>Accelerates normalization of agent-based service automation</li>
+      <li>Increases pressure for formal governance frameworks around autonomous service agents</li>
     </ul>
   </section>
 
+  <!-- OUTLOOK -->
+  <section class="card">
+    <h2>Outlook</h2>
+    <p>
+      Agent-based service execution is expected to expand across utilities and municipal services
+      in the UAE over the next <b>12–36 months</b>, with a growing emphasis on resilience,
+      accountability, and auditability.
+    </p>
+  </section>
+
+  <!-- SOURCE -->
+  <section class="card">
+    <h2>Source</h2>
+    <p>
+      DEWA — Official announcement and public documentation of the <b>Rammas</b> AI platform.
+    </p>
+  </section>
+
   <footer>
-    © <span id="year"></span> AgentDub.ai
+    © <span id="year"></span> AgentDub.ai — Sentinel Signal #002
   </footer>
+
 </main>
 
 <script>
