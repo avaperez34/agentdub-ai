@@ -44,6 +44,11 @@ h1 {
   padding: 14px;
   margin: 14px 0 18px;
 }
+.nav-logo img {
+  height: 36px;
+  width: auto;
+  display: block;
+}
 
 .controls {
   display: grid;
