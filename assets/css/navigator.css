@@ -1,11 +1,23 @@
-/* Navigator styles are scoped so they don't break site-wide layout */
-.navigator-scope {
+:root { color-scheme: dark; }
+
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: #0b0f19;
+  color: #e8ecf3;
+  line-height: 1.45;
+}
+
+a { color: inherit; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.wrap {
   max-width: 1100px;
   margin: 0 auto;
   padding: 28px 18px 64px;
 }
 
-.navigator-scope .topbar {
+.topbar {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -13,19 +25,19 @@
   margin-bottom: 18px;
 }
 
-.navigator-scope h1 {
+h1 {
   font-size: 22px;
   margin: 0;
   letter-spacing: 0.2px;
 }
 
-.navigator-scope .sub {
+.sub {
   opacity: 0.82;
   font-size: 13px;
   margin-top: 6px;
 }
 
-.navigator-scope .panel {
+.panel {
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: 14px;
   background: rgba(255,255,255,0.03);
@@ -33,38 +45,37 @@
   margin: 14px 0 18px;
 }
 
-.navigator-scope .controls {
+.controls {
   display: grid;
   grid-template-columns: 1.4fr 1fr 1fr 1fr;
   gap: 10px;
 }
 
 @media (max-width: 860px) {
-  .navigator-scope .controls { grid-template-columns: 1fr 1fr; }
+  .controls { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 520px) {
-  .navigator-scope .controls { grid-template-columns: 1fr; }
+  .controls { grid-template-columns: 1fr; }
 }
 
-.navigator-scope label {
+label {
   display: block;
   font-size: 12px;
   opacity: 0.75;
   margin-bottom: 6px;
 }
 
-.navigator-scope input[type="search"],
-.navigator-scope select {
+input[type="search"], select {
   width: 100%;
   padding: 10px 10px;
   border-radius: 10px;
   border: 1px solid rgba(255,255,255,0.10);
   background: rgba(0,0,0,0.25);
-  color: inherit;
+  color: #e8ecf3;
   outline: none;
 }
 
-.navigator-scope .metaRow {
+.metaRow {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
@@ -73,13 +84,13 @@
   margin-top: 12px;
 }
 
-.navigator-scope .pills {
+.pills {
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
 }
 
-.navigator-scope .pill {
+.pill {
   font-size: 12px;
   border: 1px solid rgba(255,255,255,0.10);
   border-radius: 999px;
@@ -87,7 +98,7 @@
   background: rgba(255,255,255,0.03);
 }
 
-.navigator-scope .grid {
+.grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 12px;
@@ -95,13 +106,13 @@
 }
 
 @media (max-width: 980px) {
-  .navigator-scope .grid { grid-template-columns: repeat(2, 1fr); }
+  .grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 640px) {
-  .navigator-scope .grid { grid-template-columns: 1fr; }
+  .grid { grid-template-columns: 1fr; }
 }
 
-.navigator-scope .card {
+.card {
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: 16px;
   background: rgba(255,255,255,0.03);
@@ -109,37 +120,37 @@
   overflow: hidden;
   transition: transform 0.12s ease, border-color 0.12s ease;
 }
-.navigator-scope .card:hover {
+.card:hover {
   transform: translateY(-2px);
   border-color: rgba(255,255,255,0.16);
 }
 
-.navigator-scope .cardHead {
+.cardHead {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   gap: 10px;
 }
 
-.navigator-scope .name {
+.name {
   font-size: 16px;
   margin: 0;
 }
 
-.navigator-scope .small {
+.small {
   font-size: 12px;
   opacity: 0.75;
   margin-top: 4px;
 }
 
-.navigator-scope .badges {
+.badges {
   display: flex;
   flex-direction: column;
   gap: 6px;
   align-items: flex-end;
 }
 
-.navigator-scope .badge {
+.badge {
   font-size: 11px;
   padding: 5px 8px;
   border-radius: 999px;
@@ -149,7 +160,7 @@
   text-align: right;
 }
 
-.navigator-scope .scoreWrap {
+.scoreWrap {
   margin-top: 10px;
   display: flex;
   gap: 10px;
@@ -157,12 +168,12 @@
   justify-content: space-between;
 }
 
-.navigator-scope .score {
+.score {
   font-size: 12px;
   opacity: 0.9;
 }
 
-.navigator-scope .bar {
+.bar {
   flex: 1;
   height: 10px;
   border-radius: 999px;
@@ -171,26 +182,26 @@
   border: 1px solid rgba(255,255,255,0.08);
 }
 
-.navigator-scope .fill {
+.fill {
   height: 100%;
   width: 0%;
   background: rgba(255,255,255,0.55);
 }
 
-.navigator-scope .brief {
+.brief {
   margin: 10px 0 0;
   font-size: 13px;
   opacity: 0.9;
 }
 
-.navigator-scope .tags {
+.tags {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
   margin-top: 10px;
 }
 
-.navigator-scope .tag {
+.tag {
   font-size: 11px;
   padding: 4px 8px;
   border-radius: 999px;
@@ -199,11 +210,17 @@
   opacity: 0.92;
 }
 
-.navigator-scope .links {
+.links {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
   margin-top: 12px;
   font-size: 12px;
   opacity: 0.9;
+}
+
+.footerNote {
+  margin-top: 22px;
+  opacity: 0.70;
+  font-size: 12px;
 }
