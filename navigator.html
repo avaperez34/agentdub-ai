@@ -1,1 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AgentDub Navigator — GCC AI Agent Directory</title>
+  <meta name="description" content="A GCC-first strategic intelligence directory of AI agents and enterprise tools: readiness scoring, filters, and Sentinel briefs." />
+  <link rel="stylesheet" href="./assets/css/navigator.css" />
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div>
+        <h1>AgentDub Navigator</h1>
+        <div class="sub">Strategic Intelligence Directory • GCC Readiness Index • Sentinel Briefs</div>
+      </div>
+      <div class="sub" id="updated"></div>
+    </div>
+
+    <div class="panel">
+      <div class="controls">
+        <div>
+          <label for="search">Search</label>
+          <input id="search" type="search" placeholder="Search by tool, category, sector, keywords…" />
+        </div>
+
+        <div>
+          <label for="filterCategory">Category</label>
+          <select id="filterCategory">
+            <option value="">All</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="filterDeployment">Deployment</label>
+          <select id="filterDeployment">
+            <option value="">All</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="filterSector">Sector</label>
+          <select id="filterSector">
+            <option value="">All</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="filterCompliance">GCC filter</label>
+          <select id="filterCompliance">
+            <option value="">Any</option>
+            <option value="uae">UAE-compliant</option>
+            <option value="saudi">Saudi-compliant</option>
+            <option value="qatar">Qatar sovereign cloud compatible</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="sortBy">Sort</label>
+          <select id="sortBy">
+            <option value="score_desc">Score (high → low)</option>
+            <option value="score_asc">Score (low → high)</option>
+            <option value="name_asc">Name (A → Z)</option>
+            <option value="name_desc">Name (Z → A)</option>
+          </select>
+        </div>
+
+        <div class="metaRow" style="grid-column: 1 / -1;">
+          <div class="pills">
+            <span class="pill">Index: 0–10 Not Ready</span>
+            <span class="pill">11–17 Emerging</span>
+            <span class="pill">18–25 Enterprise-Ready</span>
+          </div>
+          <div class="pill" id="count">Loading…</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="grid" class="grid"></div>
+
+    <div class="footerNote">
+      Tip: To add a new tool, edit <code>/data/agents.json</code> only. Cards update automatically.
+    </div>
+  </div>
+
+  <script src="./assets/js/navigator.js"></script>
+</body>
+</html>
 
