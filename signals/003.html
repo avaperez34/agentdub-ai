@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Signal #003 — Agentic AI Embedded into Saudi Government Service Delivery</title>
+  <meta name="description" content="Sentinel Signal #003: Saudi Arabia embeds agentic AI into government service delivery, moving from pilots to execution-layer automation." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Signal #003 — Saudi Government Service Delivery Goes Agentic" />
+  <meta property="og:description" content="Saudi Arabia embeds AI agents into government service workflows—execution-layer automation at institutional scale." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://agentdub.ai/signals/003.html" />
+  <meta property="og:image" content="https://agentdub.ai/assets/og/home.png" />
+
+  <!-- Twitter/X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Signal #003 — Saudi Government Service Delivery Goes Agentic" />
+  <meta name="twitter:description" content="AI agents move into real government workflows in Saudi Arabia—execution, not hype." />
+  <meta name="twitter:image" content="https://agentdub.ai/assets/og/home.png" />
+
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background:#0b0f19;
+      color:#e8ecf3;
+      line-height:1.55;
+    }
+    a{ color:inherit; text-decoration:none; }
+    a:hover{ opacity:.9; }
+
+    header{
+      position: sticky;
+      top: 0;
+      background: rgba(11,15,25,.82);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,.08);
+      z-index: 10;
+    }
+    .bar{
+      max-width:1100px;
+      margin:0 auto;
+      padding:14px 18px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      font-weight:700;
+      letter-spacing:.2px;
+    }
+    .brand img{
+      width:36px;
+      height:36px;
+      border-radius:999px;
+      object-fit:cover;
+      display:block;
+      border:1px solid rgba(255,255,255,.25);
+      max-width:none;
+    }
+    nav{
+      display:flex; flex-wrap:wrap;
+      gap:10px;
+      align-items:center;
+      justify-content:center;
+    }
+    nav a{
+      padding:9px 12px;
+      border:1px solid rgba(255,255,255,.10);
+      border-radius:999px;
+      font-size:14px;
+      background: rgba(255,255,255,.03);
+    }
+
+    .wrap{ max-width:860px; margin:0 auto; padding:26px 18px 70px; }
+
+    .top{
+      padding:18px;
+      border:1px solid rgba(255,255,255,.10);
+      border-radius:20px;
+      background:
+        radial-gradient(800px 280px at 20% 0%, rgba(45,212,191,.18), transparent 60%),
+        radial-gradient(800px 280px at 80% 0%, rgba(14,165,233,.18), transparent 60%),
+        rgba(255,255,255,.03);
+      box-shadow: 0 18px 55px rgba(0,0,0,.35);
+    }
+
+    h1{ margin:0 0 10px; font-size:28px; line-height:1.2; }
+    .lead{ margin:0; color: rgba(232,236,243,.86); max-width:80ch; }
+
+    .meta{
+      display:flex; flex-wrap:wrap; gap:8px;
+      margin:12px 0 0;
+      color: rgba(232,236,243,.78);
+      font-size:13px;
+    }
+    .tag{
+      padding:5px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.03);
+    }
+
+    .card{
+      margin-top:14px;
+      padding:18px;
+      border:1px solid rgba(255,255,255,.10);
+      border-radius:18px;
+      background: rgba(255,255,255,.03);
+    }
+    .card h2{ margin:0 0 10px; font-size:18px; }
+    .card p{ margin:0 0 10px; color: rgba(232,236,243,.86); }
+
+    .list{ margin:10px 0 0; padding-left:18px; color: rgba(232,236,243,.86); }
+    .list li{ margin:6px 0; }
+
+    .row{
+      display:flex; gap:10px; flex-wrap:wrap;
+      margin-top:12px;
+    }
+    .btn{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:9px 12px;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.04);
+      font-weight:600;
+      font-size:13px;
+    }
+    .btn.primary{
+      border-color: rgba(45,212,191,.55);
+      background: rgba(45,212,191,.10);
+    }
+
+    .share{
+      display:flex; flex-wrap:wrap; gap:10px;
+      margin-top:14px;
+      padding-top:14px;
+      border-top:1px solid rgba(255,255,255,.08);
+    }
+    .share a{
+      padding:9px 12px;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.03);
+      font-size:14px;
+    }
+
+    footer{
+      margin-top:22px;
+      padding-top:14px;
+      border-top:1px solid rgba(255,255,255,.08);
+      color: rgba(232,236,243,.65);
+      font-size:13px;
+    }
+  </style>
+</head>
+
+<body>
+<header>
+  <div class="bar">
+    <a class="brand" href="/" aria-label="AgentDub.ai Home">
+      <img src="/assets/og/ceo-avatar-v2.png" alt="AgentDub.ai">
+      <span>AgentDub.ai</span>
+    </a>
+
+    <nav>
+      <a href="/">Home</a>
+      <a href="/sentinel.html">Sentinel</a>
+      <a href="/intelligence.html">Intelligence</a>
+      <a href="/investors/">Investors</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="top">
+    <h1>Signal #003 — Agentic AI Embedded into Saudi Government Service Delivery</h1>
+    <p class="lead">
+      Saudi Arabia is integrating AI-driven systems into citizen-facing government service delivery, moving beyond pilots toward
+      execution-layer automation inside institutional workflows.
+    </p>
+
+    <div class="meta">
+      <span class="tag">Signal #003</span>
+      <span class="tag">Country: Saudi Arabia (KSA)</span>
+      <span class="tag">Sector: GovTech</span>
+      <span class="tag">Impact: 8.0/10</span>
+      <span class="tag">Horizon: 3–7y</span>
+    </div>
+
+    <div class="row" style="margin-top:14px;">
+      <a class="btn primary" href="/intelligence.html">← Back to Intelligence</a>
+      <a class="btn" href="/sentinel.html">About Sentinel</a>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>What happened</h2>
+    <p>
+      Across Saudi national digital platforms and public-sector service delivery, AI-driven automation is being embedded into workflows
+      such as service routing, case triage, and decision support.
+    </p>
+    <p>
+      While many disclosures don’t use the marketing term “AI agents”, the behavior is functionally agentic:
+      systems act across steps, coordinate tasks, and reduce manual handling in routine processes.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Why this matters</h2>
+    <ul class="list">
+      <li><b>Government is a high-friction environment</b> — adoption implies governance readiness and institutional confidence.</li>
+      <li><b>Execution-layer AI is sticky</b> — once embedded, it compounds into standards, procurement, and operating models.</li>
+      <li><b>GCC pattern confirmation</b> — UAE and KSA are both operationalising AI as infrastructure.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Second-order effects</h2>
+    <ul class="list">
+      <li>Procurement accelerates for orchestration, identity, and audit tooling.</li>
+      <li>Pressure rises on legacy process vendors and manual-heavy BPO models.</li>
+      <li>Standards emerge around agent governance, logging, and human-in-the-loop controls.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Outlook</h2>
+    <p>
+      Expect increased formalisation: policy frameworks, audit expectations, and integration patterns that make agentic automation repeatable
+      across ministries and regulated workflows.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Source note (transparency)</h2>
+    <p>
+      This signal is derived from a convergence of public disclosures and institutional direction across Saudi Arabia, including government digital platforms,
+      SDAIA strategy and execution frameworks, and enterprise/integrator material describing automation inside service delivery.
+      It reflects a pattern of deployment rather than a single announcement.
+    </p>
+
+    <div class="share" aria-label="Share Signal #003">
+      <a id="shareLinkedIn" href="#" target="_blank" rel="noopener">Share on LinkedIn</a>
+      <a id="shareX" href="#" target="_blank" rel="noopener">Share on X</a>
+      <a id="shareFacebook" href="#" target="_blank" rel="noopener">Share on Facebook</a>
+    </div>
+  </section>
+
+  <footer>
+    © <span id="year"></span> AgentDub.ai • Sentinel Signals are structured intelligence: signal, not noise.
+  </footer>
+</main>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  const pageUrl = encodeURIComponent(window.location.href);
+  const shareText = encodeURIComponent("Sentinel Signal #003 — Saudi government service delivery goes agentic (AgentDub.ai).");
+
+  document.getElementById("shareLinkedIn").href =
+    "https://www.linkedin.com/sharing/share-offsite/?url=" + pageUrl;
+
+  document.getElementById("shareX").href =
+    "https://twitter.com/intent/tweet?url=" + pageUrl + "&text=" + shareText;
+
+  document.getElementById("shareFacebook").href =
+    "https://www.facebook.com/sharer/sharer.php?u=" + pageUrl;
+</script>
+</body>
+</html>
