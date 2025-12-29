@@ -1,1 +1,90 @@
 
+{
+  "updated": "2025-12-27",
+  "agents": [
+    {
+      "name": "AgentOps",
+      "slug": "agentops",
+      "website": "https://agentops.ai",
+      "category": "Monitoring",
+      "sectors": ["Enterprise", "GovTech"],
+      "deployment": ["SaaS"],
+      "gcc": {
+        "uae_compliant": false,
+        "saudi_compliant": false,
+        "qatar_sovereign_cloud_compatible": false,
+        "arabic_nlp_quality": "N/A",
+        "local_support": "Unknown"
+      },
+      "scores": {
+        "residency_hosting": 2,
+        "arabic_support": 0,
+        "deployment_model": 3,
+        "security_enterprise": 4,
+        "sector_fit": 3
+      },
+      "badges": ["High-Potential Emerging"],
+      "sentinel_brief": "AgentOps provides monitoring and observability for agent-based systems. Strong value for enterprise governance and reliability. GCC fit depends on hosting, compliance posture, and local support.",
+      "risk_snapshot": "Risk: limited verified GCC compliance signals. Opportunity: deploy in enterprise teams building internal agents.",
+      "adoption_outlook": "Emerging",
+      "recommended_use_case": "Enterprise agent monitoring & auditability for internal AI workflows.",
+      "profile_url": ""
+    },
+    {
+      "name": "UiPath",
+      "slug": "uipath",
+      "website": "https://www.uipath.com",
+      "category": "Automation",
+      "sectors": ["Enterprise", "Regulated"],
+      "deployment": ["Cloud", "On-Prem", "Hybrid"],
+      "gcc": {
+        "uae_compliant": true,
+        "saudi_compliant": true,
+        "qatar_sovereign_cloud_compatible": true,
+        "arabic_nlp_quality": "Medium",
+        "local_support": "Yes"
+      },
+      "scores": {
+        "residency_hosting": 4,
+        "arabic_support": 2,
+        "deployment_model": 5,
+        "security_enterprise": 5,
+        "sector_fit": 5
+      },
+      "badges": ["Sentinel-Approved for GCC Enterprise"],
+      "sentinel_brief": "UiPath is a mature automation platform with strong enterprise controls and flexible deployment. Frequently relevant for GCC shared services and regulated workflows. Works well as the ‘execution layer’ alongside AI copilots.",
+      "risk_snapshot": "Risk: adoption can stall without process ownership. Opportunity: fast ROI in high-volume back-office workflows.",
+      "adoption_outlook": "Enterprise-Ready",
+      "recommended_use_case": "Gov/enterprise automation: claims, onboarding, approvals, compliance workflows.",
+      "profile_url": ""
+    },
+    {
+      "name": "Early-stage Agent (Example)",
+      "slug": "example-agent",
+      "website": "https://example.com",
+      "category": "Customer Support",
+      "sectors": ["SMB"],
+      "deployment": ["SaaS"],
+      "gcc": {
+        "uae_compliant": false,
+        "saudi_compliant": false,
+        "qatar_sovereign_cloud_compatible": false,
+        "arabic_nlp_quality": "Low",
+        "local_support": "No"
+      },
+      "scores": {
+        "residency_hosting": 1,
+        "arabic_support": 1,
+        "deployment_model": 2,
+        "security_enterprise": 1,
+        "sector_fit": 1
+      },
+      "badges": ["Not Ready for GCC Deployment"],
+      "sentinel_brief": "Early-stage support agent with limited enterprise controls. Not yet positioned for regulated GCC environments. Could be viable for SMB experiments if data sensitivity is low.",
+      "risk_snapshot": "Risk: compliance + security gaps. Opportunity: pilot in non-sensitive, low-risk support flows.",
+      "adoption_outlook": "Not Ready",
+      "recommended_use_case": "Non-sensitive FAQ automation for SMBs (pilot only).",
+      "profile_url": ""
+    }
+  ]
+}
