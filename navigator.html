@@ -3,25 +3,53 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AgentDub Navigator — GCC AI Agent Directory</title>
-  <meta name="description" content="A GCC-first strategic intelligence directory of AI agents and enterprise tools: readiness scoring, filters, and Sentinel briefs." />
-  <link rel="stylesheet" href="./assets/css/navigator.css" />
+
+  <title>AgentDub Navigator — GCC AI Intelligence Directory</title>
+  <meta name="description" content="AgentDub Navigator is a GCC-first strategic intelligence directory for AI agents, scored by regional readiness and enterprise viability." />
+
+  <!-- MAIN SITE STYLES (same as index.html) -->
+  <link rel="stylesheet" href="/assets/style.css">
+
+  <!-- NAVIGATOR STYLES -->
+  <link rel="stylesheet" href="/assets/css/navigator.css">
 </head>
+
 <body>
-  <div class="wrap">
+
+  <!-- HEADER / NAVIGATION -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <img src="/assets/og/ceo-avatar-v2.png" alt="AgentDub.ai logo">
+      </a>
+      <a href="/">Home</a>
+      <a href="/sentinel.html">Sentinel</a>
+      <a href="/intelligence.html">Intelligence</a>
+      <a href="/navigator.html" class="active">Navigator</a>
+      <a href="/investors/">Investors</a>
+    </div>
+  </nav>
+
+  <!-- PAGE CONTENT -->
+  <main class="wrap">
+
     <div class="topbar">
       <div>
         <h1>AgentDub Navigator</h1>
-        <div class="sub">Strategic Intelligence Directory • GCC Readiness Index • Sentinel Briefs</div>
+        <div class="sub">
+          Strategic Intelligence Directory • GCC Readiness Index • Sentinel Insights
+        </div>
       </div>
       <div class="sub" id="updated"></div>
     </div>
 
+    <!-- FILTER PANEL -->
     <div class="panel">
       <div class="controls">
+
         <div>
           <label for="search">Search</label>
-          <input id="search" type="search" placeholder="Search by tool, category, sector, keywords…" />
+          <input id="search" type="search" placeholder="Search by agent, category, sector, keywords…" />
         </div>
 
         <div>
@@ -73,15 +101,17 @@
           </div>
           <div class="pill" id="count">Loading…</div>
         </div>
+
       </div>
     </div>
 
+    <!-- RESULTS GRID -->
     <div id="grid" class="grid"></div>
 
-   
-  </div>
+  </main>
 
-  <script src="./assets/js/navigator.js"></script>
+  <!-- NAVIGATOR LOGIC -->
+  <script src="/assets/js/navigator.js"></script>
+
 </body>
 </html>
-
