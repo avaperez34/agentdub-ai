@@ -229,4 +229,11 @@ input[type="search"], select {
   opacity: 0.70;
   font-size: 12px;
 }
+/* FORCE logo size in nav (desktop + mobile) */
+.nav-logo img {
+  height: 36px !important;
+  width: auto !important;
+  max-height: 36px !important;
+  max-width: none !important;
+}
 
