@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Signal #002 — AI Service Agents Embedded in Dubai Utility Operations</title>
-  <meta name="description" content="Sentinel Signal #002: DEWA deploys AI-driven service agents across customer engagement and internal utility workflows in Dubai." />
+  <meta name="description" content="AgentDub Sentinel Signal #002 — DEWA deploys AI-driven service agents across customer engagement and internal utility workflows in Dubai." />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Signal #002 — AI Service Agents Embedded in Dubai Utility Operations" />
@@ -18,6 +18,8 @@
   <meta name="twitter:title" content="Signal #002 — AI Service Agents Embedded in Dubai Utility Operations" />
   <meta name="twitter:description" content="Agent-based service execution enters regulated public utilities in Dubai." />
   <meta name="twitter:image" content="https://agentdub.ai/assets/og/home.png" />
+
+  <link rel="canonical" href="https://agentdub.ai/signals/002.html" />
 
   <style>
     :root { color-scheme: dark; }
@@ -145,6 +147,22 @@
     }
     ul.list li{ margin:6px 0; }
 
+    .share{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:14px;
+      padding-top:14px;
+      border-top:1px solid rgba(255,255,255,.08);
+    }
+    .share a{
+      padding:9px 12px;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.03);
+      font-size:14px;
+    }
+
     footer{
       margin-top:22px;
       padding-top:14px;
@@ -174,7 +192,7 @@
 
 <main class="wrap">
 
-  <!-- TOP / SUMMARY -->
+  <!-- TOP -->
   <section class="top">
     <h1>Signal #002 — AI Service Agents Embedded in Dubai Utility Operations</h1>
     <p class="lead">
@@ -204,8 +222,8 @@
       billing, service activation, and fault reporting.
     </p>
     <p>
-      Deployment inside a regulated utility implies a high degree of maturity in governance,
-      reliability, and auditability — conditions rarely met in early-stage AI deployments.
+      Deployment inside a regulated utility implies maturity in governance, reliability, and
+      auditability.
     </p>
   </section>
 
@@ -215,7 +233,7 @@
     <ul class="list">
       <li>Establishes a public-sector benchmark for AI agent deployment</li>
       <li>Accelerates normalization of agent-based service automation</li>
-      <li>Increases pressure for formal governance frameworks around autonomous service agents</li>
+      <li>Increases pressure for formal governance frameworks</li>
     </ul>
   </section>
 
@@ -224,17 +242,22 @@
     <h2>Outlook</h2>
     <p>
       Agent-based service execution is expected to expand across utilities and municipal services
-      in the UAE over the next <b>12–36 months</b>, with a growing emphasis on resilience,
-      accountability, and auditability.
+      in the UAE over the next <b>12–36 months</b>, with a focus on resilience and accountability.
     </p>
   </section>
 
-  <!-- SOURCE -->
+  <!-- SOURCE + SHARE -->
   <section class="card">
     <h2>Source</h2>
     <p>
       DEWA — Official announcement and public documentation of the <b>Rammas</b> AI platform.
     </p>
+
+    <div class="share" aria-label="Share Signal #002">
+      <a id="shareLinkedIn" href="#" target="_blank" rel="noopener">Share on LinkedIn</a>
+      <a id="shareX" href="#" target="_blank" rel="noopener">Share on X</a>
+      <a id="shareFacebook" href="#" target="_blank" rel="noopener">Share on Facebook</a>
+    </div>
   </section>
 
   <footer>
@@ -245,6 +268,20 @@
 
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
+
+  const pageUrl = encodeURIComponent(window.location.href);
+  const shareText = encodeURIComponent(
+    "Sentinel Signal #002 — AI service agents embedded in Dubai utility operations (AgentDub.ai)"
+  );
+
+  document.getElementById("shareLinkedIn").href =
+    "https://www.linkedin.com/sharing/share-offsite/?url=" + pageUrl;
+
+  document.getElementById("shareX").href =
+    "https://twitter.com/intent/tweet?url=" + pageUrl + "&text=" + shareText;
+
+  document.getElementById("shareFacebook").href =
+    "https://www.facebook.com/sharer/sharer.php?u=" + pageUrl;
 </script>
 </body>
 </html>
